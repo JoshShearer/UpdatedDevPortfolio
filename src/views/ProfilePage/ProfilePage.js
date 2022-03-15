@@ -1,12 +1,11 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
-// @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
-import Camera from "@material-ui/icons/Camera";
-import Palette from "@material-ui/icons/Palette";
-import Favorite from "@material-ui/icons/Favorite";
+import makeStyles from '@mui/styles/makeStyles';
+// @mui/icons-material
+import Camera from "@mui/icons-material/Camera";
+import Palette from "@mui/icons-material/Palette";
+import Favorite from "@mui/icons-material/Favorite";
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";

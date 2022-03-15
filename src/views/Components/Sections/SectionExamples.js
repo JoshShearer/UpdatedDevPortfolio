@@ -1,9 +1,8 @@
 import React from "react";
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
-// @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
+import makeStyles from '@mui/styles/makeStyles';
+// @mui/icons-material
 
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
