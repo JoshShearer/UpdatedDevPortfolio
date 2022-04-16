@@ -7,8 +7,14 @@ import Card from "@mui/material/Card";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKSocialButton from "components/MKSocialButton";
-import SectionLinks from "./SectionLinks.js";
-
+// import SectionLinks from "./SectionLinks.js";
+import { MyProjects } from "./MyProjects";
+import ProjectOverlay from './ProjectOverlay';
+import SwipeableViews from 'react-swipeable-views';
+import { useTheme } from '@mui/material/styles';
+import AppBar from '@mui/material/AppBar';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
 // Material Kit 2 React examples
 // import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import PageHeader from 'layouts/sections/navigation/Header/PageHeader';
@@ -16,6 +22,10 @@ import HeaderOne from "layouts/sections/navigation/HeaderOne/HeaderOne";
 import SimpleFooter from "examples/Footers/SimpleFooter";
 import Footer from "layouts/sections/Footer/Footer";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
+import { Button } from "@mui/material";
+import { styled } from "@mui/styles";
+import { grey } from "@mui/material/colors";
+
 
 // Presentation page sections
 import Counters from "pages/Presentation/sections/Counters";
@@ -33,16 +43,66 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/DSC00419.jpg";
+import bgImage from "assets/images/RioEvening.jpg";
 
-function Home() {
+const MyButton = styled(Button)({
+    boxShadow: 'none',
+    textTransform: 'none',
+    fontSize: 16,
+    padding: '6px 12px',
+    border: '1px solid',
+    lineHeight: 1.5,
+    backgroundColor: grey[800],
+    borderColor: '#0063cc',
+    fontFamily: [
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+    '&:hover': {
+      backgroundColor: grey[900],
+      borderColor: '#0062cc',
+      boxShadow: 'none',
+    },
+    '&:active': {
+      boxShadow: 'none',
+      backgroundColor: '#0062cc',
+      borderColor: '#005cbf',
+    },
+    '&:focus': {
+      boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
+    },
+  });
+
+// const myUseStyles = makeStyles(theme => ({
+//     root: {
+//       backgroundColor: grey[800],
+//       color: grey[100],
+//       left: "30%",
+//       // right: "50%"
+//     },
+//     paper: {
+//       padding: theme.spacing(1),
+//       textAlign: "center",
+//       color: theme.palette.text.secondary
+//     }
+//   }));
+//   const useStyles = makeStyles(styles);
+//   const classy = myUseStyles();
+
+
+function ProjectsPage() {
   return (
     <>
      {/* <PageHeader /> */}
-     <HeaderOne bgImage={bgImage} title="Developer Page"
-                subTitle="An overview of projects completed"
-                height='100vh'
-                />
+     <HeaderOne bgImage={bgImage} height='75vh' />
       <Card
         sx={{
           p: 2,
@@ -57,6 +117,7 @@ function Home() {
         <MKBox component="section" my={6} py={6}>
           <Container>
             <Grid
+              container
               item
               xs={12}
               lg={6}
@@ -64,19 +125,36 @@ function Home() {
               alignItems="left"
               sx={{ textAlign: "left", my: 6, mx: "auto", px: 0.75 }}
             >
-              <MKTypography variant="h2" fontWeight="bold">
-                A passion for challenging projects
+             <MKTypography variant="h2" fontWeight="bold" color="dark">
+                Active Projects
               </MKTypography>
-              <MKTypography variant="body1" color="text">
-                Welcome. Check out some of the projects that I am working on. I
-                enjoy web development and machine learning. In my free time I
-                like to invest and automate the process of decision making.
-                Click below to learn more.
+              <MKTypography variant="body1" color="Dark">
+              My interests have led me to study and work on many
+                  applications from Machine Learning with python to Full Stack
+                  Web Development based around Java and React.
               </MKTypography>
+              <MyButton
+                  href="/technical-page"
+                  size="large"
+                  variant="contained"
+                //   color="palette.primary.light"
+                //   className={classy.root}
+                >
+                  <MKTypography variant="h5" color="#ffffff">Technical Tools</MKTypography>
+                </MyButton>
             </Grid>
           </Container>
         </MKBox>
-        <SectionLinks/>
+        <MKBox sx={{ flexGrow: 1 }} justify="center">
+          <Grid container spacing={2}>
+            {MyProjects.map((project, key) => (
+              <Grid item xs={12} sm={12} md={4} key={key}>
+                <ProjectOverlay {...project} />
+              </Grid>
+            ))}
+            </Grid>
+          </MKBox>
+        {/* <SectionLinks/> */}
         {/* <Counters />
         <Information />
         <DesignBlocks />
@@ -190,4 +268,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default ProjectsPage;

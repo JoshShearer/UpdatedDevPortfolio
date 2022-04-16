@@ -1,33 +1,37 @@
-
+// @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Link from "@mui/material/Link";
+import MuiLink from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
+import { IconButton } from "@mui/material";
+import { Link } from "react-router-dom";
+import HeaderLinks from "../Header/HeaderLinks";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
-// Images
-import bgImage from "assets/images/bg-coworking.jpeg";
+import { Devices } from "@mui/icons-material";
 
-function HeaderOne() {
+// Images
+
+function HeaderOne(props) {
   return (
     <MKBox component="header" position="relative">
       <MKBox component="nav" position="absolute" top="0.5rem" width="100%">
         <Container>
-          <Grid container flexDirection="row" alignItems="center">
+          <Grid container flexDirection="row" spacing={3}>
+          <Grid item xs>
+          <Link to='/'>
             <MKTypography
-              component={Link}
-              href="#"
-              variant="button"
+              variant="h4"
               color="white"
               fontWeight="regular"
               py={0.8125}
               mr={2}
             >
-              Material Design
+              Josh Shearer
             </MKTypography>
             <MKButton
               variant="outlined"
@@ -36,7 +40,9 @@ function HeaderOne() {
             >
               <MKBox component="i" color="white" className="fas fa-bars" />
             </MKButton>
-            <MKBox
+            </Link>
+            </Grid>
+            {/*  <MKBox
               component="ul"
               display={{ xs: "none", lg: "flex" }}
               p={0}
@@ -44,8 +50,8 @@ function HeaderOne() {
               mx="auto"
               sx={{ listStyle: "none" }}
             >
-              <MKBox component="li">
-                <MKTypography
+             <MKBox component="li">
+                 <MKTypography
                   component={Link}
                   href="#"
                   variant="button"
@@ -81,17 +87,49 @@ function HeaderOne() {
                   onClick={(e) => e.preventDefault()}
                 >
                   Contact Us
-                </MKTypography>
+                </MKTypography> 
               </MKBox>
-            </MKBox>
+            </MKBox>*/}
             <MKBox
               component="ul"
-              display={{ xs: "none", lg: "flex" }}
+              display={{ xs: "6", lg: "flex" }}
+              alignItems="right"
               p={0}
               m={0}
               sx={{ listStyle: "none" }}
             >
-              <MKBox component="li">
+              {/* <MKBox component="li">
+                <MKTypography
+                  component={MuiLink}
+                  href="#"
+                  variant="button"
+                  p={1}
+                  // onClick={(e) => e.preventDefault()}
+                >
+                  <Link to="/projects-page">
+                    <IconButton
+                      aria-label="Projects"
+                      // color="transparent"
+                      // target="_blank"
+                      onClick={0}
+                    >
+                      <Devices />
+                      <MKTypography
+                        // component={MuiLink}
+                        // href="www.joshshearer.org/projects-page"
+                        variant="button"
+                        color="white"
+                        fontWeight="regular"
+                        py={0.8125}
+                        mr={2}
+                      >
+                        Projects
+                      </MKTypography>
+                    </IconButton>
+                  </Link>
+                </MKTypography>
+              </MKBox> */}
+              {/* <MKBox component="li">
                 <MKTypography
                   component={Link}
                   href="#"
@@ -99,7 +137,11 @@ function HeaderOne() {
                   p={1}
                   onClick={(e) => e.preventDefault()}
                 >
-                  <MKBox component="i" color="white" className="fab fa-twitter" />
+                  <MKBox
+                    component="i"
+                    color="white"
+                    className="fab fa-facebook"
+                  />
                 </MKTypography>
               </MKBox>
               <MKBox component="li">
@@ -110,20 +152,14 @@ function HeaderOne() {
                   p={1}
                   onClick={(e) => e.preventDefault()}
                 >
-                  <MKBox component="i" color="white" className="fab fa-facebook" />
+                  <MKBox
+                    component="i"
+                    color="white"
+                    className="fab fa-instagram"
+                  />
                 </MKTypography>
-              </MKBox>
-              <MKBox component="li">
-                <MKTypography
-                  component={Link}
-                  href="#"
-                  variant="button"
-                  p={1}
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <MKBox component="i" color="white" className="fab fa-instagram" />
-                </MKTypography>
-              </MKBox>
+              </MKBox> */}
+              <HeaderLinks/>
             </MKBox>
           </Grid>
         </Container>
@@ -131,15 +167,32 @@ function HeaderOne() {
       <MKBox
         display="flex"
         alignItems="center"
-        minHeight="100vh"
+        minHeight={props.height}
         sx={{
-          backgroundImage: ({ palette: { gradients }, functions: { linearGradient, rgba } }) => `${bgImage}`,
+          backgroundImage: 
+          // ({
+          //   palette: { gradients },
+          //   functions: { linearGradient, rgba },
+          // }) =>
+          //   `${linearGradient(
+          //     rgba(gradients.dark.main, 0.5),
+          //     rgba(gradients.dark.state, 0.5)
+          //   )}, 
+            `url(${props.bgImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
         <Container>
-          <Grid container item xs={12} md={7} lg={6} flexDirection="column" justifyContent="center">
+          <Grid
+            container
+            item
+            xs={12}
+            md={7}
+            lg={6}
+            flexDirection="column"
+            justifyContent="center"
+          >
             <MKTypography
               variant="h1"
               color="white"
@@ -150,18 +203,23 @@ function HeaderOne() {
                 },
               })}
             >
-              Material Kit
+              {props.title}
             </MKTypography>
-            <MKTypography variant="body1" color="white" opacity={0.8} pr={6} mr={6}>
-              The time is now for it be okay to be great. People in this world shun people for being
-              nice.
+            <MKTypography
+              variant="body1"
+              color="white"
+              opacity={0.8}
+              pr={6}
+              mr={6}
+            >
+              {props.subTitle}
             </MKTypography>
-            <Stack direction="row" spacing={1} mt={3}>
+            {/* <Stack direction="row" spacing={1} mt={3}>
               <MKButton color="white">Get Started</MKButton>
               <MKButton variant="text" color="white">
                 Read more
               </MKButton>
-            </Stack>
+            </Stack> */}
           </Grid>
         </Container>
       </MKBox>

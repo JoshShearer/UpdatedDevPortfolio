@@ -7,11 +7,11 @@ import Card from "@mui/material/Card";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKSocialButton from "components/MKSocialButton";
-import SectionLinks from "./SectionLinks.js";
+// import SectionLinks from "./SectionLinks.js";
 
 // Material Kit 2 React examples
 // import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import PageHeader from 'layouts/sections/navigation/Header/PageHeader';
+import PageHeader from "layouts/sections/navigation/Header/PageHeader";
 import HeaderOne from "layouts/sections/navigation/HeaderOne/HeaderOne";
 import SimpleFooter from "examples/Footers/SimpleFooter";
 import Footer from "layouts/sections/Footer/Footer";
@@ -24,6 +24,8 @@ import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
 import Pages from "pages/Presentation/sections/Pages";
 import Testimonials from "pages/Presentation/sections/Testimonials";
 import Download from "pages/Presentation/sections/Download";
+import ProductSection from "./Sections/ProductSection.js";
+import WorkSection from "./Sections/WorkSection.js";
 
 // Presentation page components
 import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
@@ -33,16 +35,21 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/DSC00419.jpg";
+import bgImage from "assets/images/Sunrise.jpg";
 
-function Home() {
+function LandingPage() {
   return (
     <>
-     {/* <PageHeader /> */}
-     <HeaderOne bgImage={bgImage} title="Developer Page"
-                subTitle="An overview of projects completed"
-                height='100vh'
-                />
+      {/* <PageHeader /> */}
+      <HeaderOne
+        bgImage={bgImage}
+        height="75vh"
+        title="Your Story Start's Here"
+        subTitle="Big Ideas need Big Solutions.  We are here to help make sure that your new
+                your new marketplace is built to grow with your
+                business. We will utilize cutting edge technologies to unlock the 
+                true potential of your business."
+      />
       <Card
         sx={{
           p: 2,
@@ -54,29 +61,31 @@ function Home() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <MKBox component="section" my={6} py={6}>
+        <MKBox component="section" my={6} py={12}>
           <Container>
             <Grid
-              item
+              container
               xs={12}
               lg={6}
               flexDirection="column"
               alignItems="left"
-              sx={{ textAlign: "left", my: 6, mx: "auto", px: 0.75 }}
+              sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
             >
-              <MKTypography variant="h2" fontWeight="bold">
-                A passion for challenging projects
-              </MKTypography>
+              <MKTypography variant="h2">Let{"'"}s Talk Projects</MKTypography>
               <MKTypography variant="body1" color="text">
-                Welcome. Check out some of the projects that I am working on. I
-                enjoy web development and machine learning. In my free time I
-                like to invest and automate the process of decision making.
-                Click below to learn more.
+                We provide custom development solutions. Our focus in on small
+                business and startup's that need to develop a scalable web
+                presence in one or more of the following: eCommerce/Online
+                shopping, iPhone/Android app development (React), data analysis
+                and machine learning.
               </MKTypography>
+              <br />
             </Grid>
           </Container>
+          <ProductSection />
+              <WorkSection />
         </MKBox>
-        <SectionLinks/>
+        {/* <SectionLinks/> */}
         {/* <Counters />
         <Information />
         <DesignBlocks />
@@ -190,4 +199,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default LandingPage;

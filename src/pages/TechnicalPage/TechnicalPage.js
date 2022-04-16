@@ -7,11 +7,12 @@ import Card from "@mui/material/Card";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKSocialButton from "components/MKSocialButton";
-import SectionLinks from "./SectionLinks.js";
+// import SectionLinks from "./SectionLinks.js";
+import SkillSection from "./SkillSection.js";
 
 // Material Kit 2 React examples
 // import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import PageHeader from 'layouts/sections/navigation/Header/PageHeader';
+import PageHeader from "layouts/sections/navigation/Header/PageHeader";
 import HeaderOne from "layouts/sections/navigation/HeaderOne/HeaderOne";
 import SimpleFooter from "examples/Footers/SimpleFooter";
 import Footer from "layouts/sections/Footer/Footer";
@@ -33,16 +34,13 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/DSC00419.jpg";
+import bgImage from "assets/images/IguassuSunset.jpg";
 
-function Home() {
+function TechnicalPage() {
   return (
     <>
-     {/* <PageHeader /> */}
-     <HeaderOne bgImage={bgImage} title="Developer Page"
-                subTitle="An overview of projects completed"
-                height='100vh'
-                />
+      {/* <PageHeader /> */}
+      <HeaderOne bgImage={bgImage} height="65vh" />
       <Card
         sx={{
           p: 2,
@@ -57,6 +55,7 @@ function Home() {
         <MKBox component="section" my={6} py={6}>
           <Container>
             <Grid
+              container
               item
               xs={12}
               lg={6}
@@ -65,18 +64,17 @@ function Home() {
               sx={{ textAlign: "left", my: 6, mx: "auto", px: 0.75 }}
             >
               <MKTypography variant="h2" fontWeight="bold">
-                A passion for challenging projects
+                Active Projects
               </MKTypography>
               <MKTypography variant="body1" color="text">
-                Welcome. Check out some of the projects that I am working on. I
-                enjoy web development and machine learning. In my free time I
-                like to invest and automate the process of decision making.
-                Click below to learn more.
+                My interests have led me to study and work on Machine Learning
+                applications with python among other things.
               </MKTypography>
             </Grid>
+            <SkillSection />
           </Container>
         </MKBox>
-        <SectionLinks/>
+        {/* <SectionLinks/> */}
         {/* <Counters />
         <Information />
         <DesignBlocks />
@@ -190,4 +188,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default TechnicalPage;
