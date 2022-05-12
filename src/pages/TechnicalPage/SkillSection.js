@@ -39,6 +39,7 @@ const skillImages = [
   ["Web3","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.AK6zWN12xUAhM9H4GE7QqAHaEa%26pid%3DApi&f=1"],
   ["Solidity", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn0.scrvt.com%2Fb095ee27d37b3d7b6b150adba9ac6ec8%2F5677e4f602626f21%2F0dd4688ca630%2Fv%2F5d972aa4629a%2Fsolidity_overview.png&f=1&nofb=1"],
   ["Ethereum", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.GuRtgayFyV4btd7YVZqosgHaEK%26pid%3DApi&f=1"],
+  ["Smart Contracts","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.SvDFp8B8lyOLBQEih_QIPQHaEK%26pid%3DApi&f=1"]
   
   ["Python","https://www.technotification.com/wp-content/uploads/2017/05/Python-programming-compressed.jpg"],
   ["Pandas","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.BULwTfynXVAEDRtDYrB5dQAAAA%26pid%3DApi&f=1"],
