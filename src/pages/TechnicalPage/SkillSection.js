@@ -41,13 +41,13 @@ const skillImages = [
   ["Ethereum", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.GuRtgayFyV4btd7YVZqosgHaEK%26pid%3DApi&f=1"],
   
   ["Python","https://www.technotification.com/wp-content/uploads/2017/05/Python-programming-compressed.jpg"],
-  ["Pandas", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.BULwTfynXVAEDRtDYrB5dQAAAA%26pid%3DApi&f=1"],
+  ["Pandas","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.BULwTfynXVAEDRtDYrB5dQAAAA%26pid%3DApi&f=1"],
   ["Numpy","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.C3w3zZRyuOfaxzxVBZABWwHaC9%26pid%3DApi&f=1"],
   ["TensorFlow","https://i.ytimg.com/vi/MrijcdNl_U4/maxresdefault.jpg"],
   ["NLP","https://www.freelancinggig.com/blog/wp-content/uploads/2017/07/Natural-Language-Processing.png"],
   ["AlgoTrad","https://www.digitaledge.org/wp-content/uploads/2018/02/How-Can-You-Master-Algorithmic-Trading.jpeg"],
-  ["Selenium", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Q2nMVNtPBhI0peXXQTSAxQHaEZ%26pid%3DApi&f=1"],
-  ["Craft Beer Pi", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fis4-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple19%2Fv4%2F99%2Fc1%2F55%2F99c155c4-462e-ecc9-6457-6a0aee30f735%2Fsource%2F512x512bb.jpg&f=1&nofb=1"],
+  ["Selenium","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Q2nMVNtPBhI0peXXQTSAxQHaEZ%26pid%3DApi&f=1"],
+  ["Craft Beer Pi","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fis4-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple19%2Fv4%2F99%2Fc1%2F55%2F99c155c4-462e-ecc9-6457-6a0aee30f735%2Fsource%2F512x512bb.jpg&f=1&nofb=1"],
 ];
 
 export default function SkillSection(props) {
