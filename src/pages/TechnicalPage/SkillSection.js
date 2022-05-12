@@ -22,6 +22,9 @@ const skillImages = [
   ["Nextjs","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.IbzKrKUVsfSH_UJxSX53EQHaEK%26pid%3DApi&f=1"],
   ["Typescript","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.SSo_VpLEJ49WTi_ubpTVGQHaDa%26pid%3DApi&f=1"],
 
+  ["Redux","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.I41ajuzUNAVtZGa7wExkNAHaDD%26pid%3DApi&f=1"],
+  ["Rematch","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.dIHwMZlm5PfZBTWfsQp_PgHaEA%26pid%3DApi&f=1"],
+
   ["CSS","https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/90562701/original/2efb936eb6ad65c1257e56f9ff1c16ab104bbf8d/fix-any-html-css-javascript-errors-website-bugs-or-issues.png"],
   ["Tailwindui","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.C2pQVFQywHnv6whsimADlgHaEo%26pid%3DApi&f=1"],
   ["MaterialUI @MUI","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._mdpsmNUZ05vQb-q09t3jAHaDc%26pid%3DApi&f=1"],
