@@ -1,6 +1,5 @@
 // @mui material components
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
+import { Container, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import HeaderLinks from "../Header/HeaderLinks";
 
@@ -30,18 +29,12 @@ function HeaderOne(props) {
                 >
                   Josh Shearer
                 </MKTypography>
-                <MKButton
-                  variant="outlined"
-                  color="white"
-                  sx={{ display: { xs: "block", lg: "none" }, ml: "auto" }}
-                >
-                  <MKBox component="i" color="white" className="fas fa-bars" />
-                </MKButton>
+
               </Link>
             </Grid>
             <MKBox
               component="ul"
-              display={{ xs: "6", lg: "flex" }}
+              display={{ xs: "flex"}}
               alignItems="right"
               p={0}
               m={0}
