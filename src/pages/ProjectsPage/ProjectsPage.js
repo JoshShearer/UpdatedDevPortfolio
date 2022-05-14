@@ -15,7 +15,7 @@ import { styled, withStyles } from "@mui/styles";
 import { grey } from "@mui/material/colors";
 
 // Images
-import bgImage from "assets/images/RioEvening.jpg";
+import bgImage from "assets/images/RioEvening.avif";
 
 const WhiteTextTypography = withStyles({
   root: {

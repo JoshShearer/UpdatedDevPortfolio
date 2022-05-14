@@ -15,7 +15,7 @@ import ProductSection from "./Sections/ProductSection.js";
 import WorkSection from "./Sections/WorkSection.js";
 
 // Images
-import bgImage from "assets/images/Sunrise.jpg";
+import bgImage from "assets/images/Sunrise.avif";
 
 function LandingPage() {
   return (

@@ -18,7 +18,7 @@ import HeaderOne from "layouts/sections/navigation/HeaderOne/HeaderOne";
 import Footer from "layouts/sections/Footer/Footer";
 
 // Images
-import bgImage from "assets/images/IguassuSunset.jpg";
+import bgImage from "assets/images/IguassuSunset.avif";
 
 function TechnicalPage() {
   return (

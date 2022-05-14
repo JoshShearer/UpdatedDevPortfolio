@@ -17,7 +17,7 @@ import Footer from "layouts/sections/Footer/Footer";
 
 
 // Images
-import bgImage from "assets/images/DSC00419.jpg";
+import bgImage from "assets/images/DSC00419.avif";
 
 function Home() {
   return (
