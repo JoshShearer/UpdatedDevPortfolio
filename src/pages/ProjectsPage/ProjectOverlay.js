@@ -1,24 +1,25 @@
 import React, { useState, forwardRef } from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
-import makeStyles from '@mui/styles/makeStyles';
-import Card from "@mui/material/Card";
-import CardActionArea from "@mui/material/CardActionArea";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Dialog from "@mui/material/Dialog";
-import DialogTitle from "@mui/material/DialogTitle";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import Close from "@mui/icons-material/Close";
-import DialogContent from "@mui/material/DialogContent";
-import DialogActions from "@mui/material/DialogActions";
-import Slide from "@mui/material/Slide";
-import IconButton from "@mui/material/IconButton";
-import Button from "@mui/material/Button";
+import makeStyles from "@mui/styles/makeStyles";
+import {
+  CardActionArea,
+  Slide,
+  Typography,
+  IconButton,
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Dialog,
+  DialogTitle,
+  Grid,
+  DialogContent,
+  DialogActions,
+} from "@mui/material";
+
 import { grey } from "@mui/material/colors";
-import Typography from "@mui/material/Typography";
 
 const Transition = forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />;
@@ -26,19 +27,27 @@ const Transition = forwardRef(function Transition(props, ref) {
 
 Transition.displayName = "Transition";
 
+const commonStyles = {
+  bgcolor: "background.paper",
+  m: 1,
+  borderColor: "text.primary",
+  width: "5rem",
+  height: "5rem",
+};
+
 const useStyles = makeStyles({
   root: {
     maxWidth: 700,
     backgroundColor: grey[800],
     color: grey[600],
-    borderRadius: "10px"
+    borderRadius: "10px",
   },
   media: {
-    height: 280
+    height: 280,
   },
   avatar: {
-    marginLeft: "auto"
-  }
+    marginLeft: "auto",
+  },
 });
 // const myUseStyles = makeStyles(styles);
 
@@ -46,23 +55,36 @@ export default function ProjectOverlay(props) {
   const [classicModal, setClassicModal] = useState(false);
 
   const classes = useStyles();
-//   const classy = myUseStyles();
   const navImageClasses = classNames(
-    classes.media,
-    // props.className,
-    // classy.Card
+    classes.media
   );
 
   return (
     <div>
-      <Card className={classes.root}>
+      <Card
+        className={classes.root}
+        sx={{
+          "&:hover": {
+            // ...commonStyles,
+            border: 1,
+            borderRadius: 2,
+            borderColor: "white",
+            opacity: [0.9, 0.8, 0.7],
+          },
+        }}
+      >
         <CardActionArea onClick={() => setClassicModal(true)}>
           <Grid container>
             <Grid item xs={12} sm={12} md={6} lg={4}></Grid>
           </Grid>
           <CardMedia className={navImageClasses} image={props.imageLink} />
           <CardContent>
-            <Typography variant="h5" gutterBottom component="div" color="#ffffff">
+            <Typography
+              variant="h5"
+              gutterBottom
+              component="div"
+              color="#ffffff"
+            >
               {props.title}
             </Typography>
           </CardContent>
@@ -70,7 +92,7 @@ export default function ProjectOverlay(props) {
         <Dialog
           classes={{
             root: classes.center,
-            paper: classes.modal
+            paper: classes.modal,
           }}
           open={classicModal}
           TransitionComponent={Transition}
@@ -79,18 +101,15 @@ export default function ProjectOverlay(props) {
           aria-labelledby="classic-modal-slide-title"
           aria-describedby="classic-modal-slide-description"
         >
-          <DialogTitle id="classic-modal-slide-title" className={classes.modalHeader}>
-            {/* <IconButton
-              className={classes.modalCloseButton}
-              key="close"
-              aria-label="Close"
-              color="inherit"
-              onClick={() => setClassicModal(false)}
-              justify="right"
+          <DialogTitle
+            id="classic-modal-slide-title"
+            className={classes.modalHeader}
+          >
+            <Typography
+              variant="h4"
+              className={classes.modalTitle}
+              color="#000000"
             >
-              <Close className={classes.modalClose} />
-            </IconButton> */}
-            <Typography variant="h4" className={classes.modalTitle} color="#000000">
               <strong>{props.title} Project</strong>
             </Typography>
           </DialogTitle>
@@ -114,12 +133,16 @@ export default function ProjectOverlay(props) {
             <Typography variant="body2" color="#000000">
               <strong>Project Overview</strong>
             </Typography>
-            <Typography variant="p" color="#000000">{props.projectOverview}</Typography>
+            <Typography variant="p" color="#000000">
+              {props.projectOverview}
+            </Typography>
             <Typography variant="body2" color="#000000">
-            <br />
+              <br />
               <strong>Key Lessons Learned</strong>
             </Typography>
-            <Typography variant="p" color="#000000">{props.keyLessons}</Typography>
+            <Typography variant="p" color="#000000">
+              {props.keyLessons}
+            </Typography>
           </DialogContent>
           <DialogActions className={classes.modalFooter}>
             <Button
@@ -132,6 +155,7 @@ export default function ProjectOverlay(props) {
           </DialogActions>
         </Dialog>
         <CardActions>
+        {props.demoLink && 
           <Button
             href={props.demoLink}
             size="large"
@@ -140,11 +164,12 @@ export default function ProjectOverlay(props) {
             className={classes.avatar}
           >
             Demo
-          </Button>
+          </Button>}
           <Button
             href={props.githubLink}
             size="large"
             target="_blank"
+            sx={{marginLeft:"auto"}}
             // color="text.secondary"
           >
             Code

@@ -7,32 +7,14 @@ import Card from "@mui/material/Card";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKSocialButton from "components/MKSocialButton";
-// import SectionLinks from "./SectionLinks.js";
 
-// Material Kit 2 React examples
-// import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import PageHeader from "layouts/sections/navigation/Header/PageHeader";
 import HeaderOne from "layouts/sections/navigation/HeaderOne/HeaderOne";
-import SimpleFooter from "examples/Footers/SimpleFooter";
-import Footer from "layouts/sections/Footer/Footer";
-import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
-// Presentation page sections
-import Counters from "pages/Presentation/sections/Counters";
-import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-import Pages from "pages/Presentation/sections/Pages";
-import Testimonials from "pages/Presentation/sections/Testimonials";
-import Download from "pages/Presentation/sections/Download";
+import Footer from "layouts/sections/Footer/Footer";
+
 import ProductSection from "./Sections/ProductSection.js";
 import WorkSection from "./Sections/WorkSection.js";
 
-// Presentation page components
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
-
-// Routes
-import routes from "routes";
-import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/Sunrise.jpg";
@@ -65,8 +47,6 @@ function LandingPage() {
           <Container>
             <Grid
               container
-              xs={12}
-              lg={6}
               flexDirection="column"
               alignItems="left"
               sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}

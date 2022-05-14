@@ -31,17 +31,9 @@ export default function HeaderLinks(props) {
           color="white"
         >
           <Devices />
-          <MKTypography color="white" variant="h5">Projects</MKTypography>
+          <MKTypography color="white" variant="h5" fontWeight="regular" marginLeft='.5rem'>Projects</MKTypography>          
         </IconButton>
       </Link>
-      {/* </List>
-      </List>
-      <List item >
-        {/*<Tooltip title="Delete">
-          conButton aria-label="Delete">
-            <DeleteIcon />
-          </IconButton>
-        </Tooltip>*/}
       <Tooltip
         id="instagram-github"
         title="Check out my Github"

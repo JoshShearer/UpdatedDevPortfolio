@@ -13,43 +13,28 @@ import LandingPage from "pages/LandingPage/LandingPage";
 import TechnicalPage from "pages/TechnicalPage/TechnicalPage";
 import ProfilePage from "pages/ProfilePage/ProfilePage";
 import ProjectsPage from "pages/ProjectsPage/ProjectsPage";
-import routes from "routes";
-
+// import routes from "routes";
 
 export default function App() {
   const { pathname } = useLocation();
 
   // Setting page scroll to 0 when changing the route
-  useEffect(() => {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
-  }, [pathname]);
+  // useEffect(() => {
+  //   document.documentElement.scrollTop = 0;
+  //   document.scrollingElement.scrollTop = 0;
+  // }, [pathname]);
 
-  // const getRoutes = (allRoutes) =>
-  // allRoutes.map((route) => {
-  //   if (route.collapse) {
-  //     return getRoutes(route.collapse);
-  //   }
-
-  //   if (route.route) {
-  //     return <Route exact path={route.route} element={route.component} key={route.key} />;
-  //   }
-
-  //   return null;
-  // });
-
-return (
-  <ThemeProvider theme={theme}>
-    <CssBaseline />
-    <Routes>
-      {/* {getRoutes(routes)} */}
-      <Route path="/landing-page" element={<LandingPage />} />
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Routes>
+        <Route path="/landing-page" element={<LandingPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />
-      <Route path="/projects-page" element={<ProjectsPage />} />
-      <Route path="/technical-page" element={<TechnicalPage />} />
-      <Route path="/" element={<Home />} />
-      <Route path="*" element={<Navigate to="/" />} />
-    </Routes>
-  </ThemeProvider>
-);
+        <Route path="/projects-page" element={<ProjectsPage />} /> 
+        <Route path="/technical-page" element={<TechnicalPage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </ThemeProvider>
+  );
 }

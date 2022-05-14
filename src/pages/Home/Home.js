@@ -11,26 +11,14 @@ import SectionLinks from "./SectionLinks.js";
 
 // Material Kit 2 React examples
 // import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import PageHeader from 'layouts/sections/navigation/Header/PageHeader';
-import HeaderOne from "layouts/sections/navigation/HeaderOne/HeaderOne";
-import SimpleFooter from "examples/Footers/SimpleFooter";
-import Footer from "layouts/sections/Footer/Footer";
-import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
-// Presentation page sections
-import Counters from "pages/Presentation/sections/Counters";
-import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
+import HeaderOne from "layouts/sections/navigation/HeaderOne/HeaderOne";
+
+import Footer from "layouts/sections/Footer/Footer";
+
 import Pages from "pages/Presentation/sections/Pages";
 import Testimonials from "pages/Presentation/sections/Testimonials";
 import Download from "pages/Presentation/sections/Download";
-
-// Presentation page components
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
-
-// Routes
-import routes from "routes";
-import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/DSC00419.jpg";
@@ -38,11 +26,13 @@ import bgImage from "assets/images/DSC00419.jpg";
 function Home() {
   return (
     <>
-     {/* <PageHeader /> */}
-     <HeaderOne bgImage={bgImage} title="Developer Page"
-                subTitle="An overview of projects completed"
-                height='100vh'
-                />
+      {/* <PageHeader /> */}
+      <HeaderOne
+        bgImage={bgImage}
+        title="Developer Page"
+        subTitle="An overview of projects completed"
+        height="100vh"
+      />
       <Card
         sx={{
           p: 2,
@@ -76,7 +66,7 @@ function Home() {
             </Grid>
           </Container>
         </MKBox>
-        <SectionLinks/>
+        <SectionLinks />
         {/* <Counters />
         <Information />
         <DesignBlocks />

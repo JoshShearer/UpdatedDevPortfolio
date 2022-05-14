@@ -26,22 +26,6 @@ import { Button } from "@mui/material";
 import { styled } from "@mui/styles";
 import { grey } from "@mui/material/colors";
 
-
-// Presentation page sections
-import Counters from "pages/Presentation/sections/Counters";
-import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-import Pages from "pages/Presentation/sections/Pages";
-import Testimonials from "pages/Presentation/sections/Testimonials";
-import Download from "pages/Presentation/sections/Download";
-
-// Presentation page components
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
-
-// Routes
-import routes from "routes";
-import footerRoutes from "footer.routes";
-
 // Images
 import bgImage from "assets/images/RioEvening.jpg";
 
@@ -128,10 +112,10 @@ function ProjectsPage() {
              <MKTypography variant="h2" fontWeight="bold" color="dark">
                 Active Projects
               </MKTypography>
-              <MKTypography variant="body1" color="Dark">
+              <MKTypography variant="body1" color="dark">
               My interests have led me to study and work on many
-                  applications from Machine Learning with python to Full Stack
-                  Web Development based around Java and React.
+                  applications from Machine Learning with Python to Full Stack
+                  Web Development based around Java and packages like React, Nextjs, and Typescript.
               </MKTypography>
               <MyButton
                   href="/technical-page"
@@ -146,9 +130,9 @@ function ProjectsPage() {
           </Container>
         </MKBox>
         <MKBox sx={{ flexGrow: 1 }} justify="center">
-          <Grid container spacing={2}>
+          <Grid container spacing={2} justifyContent="center">
             {MyProjects.map((project, key) => (
-              <Grid item xs={12} sm={12} md={4} key={key}>
+              <Grid item xs md={4} key={key} >
                 <ProjectOverlay {...project} />
               </Grid>
             ))}
