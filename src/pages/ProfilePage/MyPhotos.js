@@ -20,7 +20,7 @@ export const myTabs = [
         height: "86",
         comment: {
           Info:"Waimea Canyon",
-          Location: "Kauai"          
+          Location: "Kauai, Hawaii"          
         },
         alt: "_DSC1990-Pano"
       },
@@ -230,7 +230,7 @@ export const myTabs = [
         height: "117",
         comment: {
           Info:"Sailing",
-          Location: "Cartegena Colombia"          
+          Location: "Cartegena, Colombia"          
         },
         alt: "20180727_055932"
       },
@@ -250,7 +250,7 @@ export const myTabs = [
         height: "180",
         comment: {
           Info:"Beautiful Getaways",
-          Location: "Bacalar Mexico"          
+          Location: "Bacalar, Mexico"          
         },
         alt: "20180328_094551"
       }

@@ -11,14 +11,13 @@ export default function InfoArea(props) {
 
   return (
     <Grid
-      item
+      container
       justifyContent="center"
       alignText="center"
       alignItems="center"
       mx="auto"
     >
       <props.icon fontSize="large" color={iconColor} sx={sx} />
-
       <MKTypography variant="h4" alignText="center">{title}</MKTypography>
       <MKTypography variant="body2">{description}</MKTypography>
     </Grid>

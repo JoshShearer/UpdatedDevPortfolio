@@ -46,7 +46,7 @@ function SimpleFooter({ company, links, light }) {
         display="flex"
         flexDirection={{ xs: "column", lg: "row" }}
         justifyContent="space-between"
-        alignItems="flex-start"
+        alignItems="center"
       >
         <MKBox
           component="ul"

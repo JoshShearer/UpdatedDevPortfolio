@@ -9,10 +9,8 @@ import {
   Tab,
   Typography,
   Box,
-  Button,
   Paper,
   createTheme,
-  ThemeProvider,
   styled as muiStyled,
 } from "@mui/material";
 
@@ -20,9 +18,6 @@ import SwipeableViews from "react-swipeable-views";
 // import { useTheme } from "@mui/material/styles";
 
 import {
-  LinkedIn,
-  GitHub,
-  Instagram,
   Camera,
   Favorite,
   Palette,
@@ -109,21 +104,20 @@ function ProfilePage() {
       <Card
         position="absolute"
         zIndex={0}
+        marginLeft="auto"
         sx={{
           p: 2,
           mx: { xs: 2, lg: 3 },
           mt: -8,
           mb: 4,
-          // backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
           backdropFilter: "saturate(200%) blur(30px)",
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Grid container justifyContent="center" position="absolute" zIndex={7}>
+        <Grid container justifyContent="center" position="absolute">
           <MKAvatar src={profile} alt="Avatar" size="xxl" />
         </Grid>
         <MKBox component="section" my={6} py={6}>
-          <Container>
             <Grid
               container
               item
@@ -215,7 +209,6 @@ function ProfilePage() {
                 </SwipeableViews>
               </Box>
             </Grid>
-          </Container>
         </MKBox>
       </Card>
       <MKBox pt={6} px={1} mt={6}>

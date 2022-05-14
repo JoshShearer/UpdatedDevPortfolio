@@ -31,12 +31,6 @@ export default function PhotoPopover(props) {
         }
   `
 
-  const Transition = React.forwardRef(function Transition(props, ref) {
-    return <Slide direction="down" ref={ref} {...props} />;
-  });
-
-  Transition.displayName = "Transition";
-
   const handleOpen = () => setClassicModal(true);
   const handleClose = () => {
       setClassicModal(false);
@@ -54,10 +48,10 @@ export default function PhotoPopover(props) {
         <Dialog
           open={classicModal}
           onClose={handleClose}
-          TransitionComponent={Transition}
           keepMounted
           aria-labelledby="classic-modal-slide-title"
           aria-describedby="classic-modal-slide-description"
+          key={props.photoKey}
         >
           <DialogTitle id="classic-modal-slide-title">
             <>
@@ -70,11 +64,11 @@ export default function PhotoPopover(props) {
           <DialogContent id="classic-modal-slide-description">
             {Object.entries(props.comment).map(([key, value]) => (
               <>
-                <Typography variant="body2" color="#ffffff">
+                <Typography variant="h6" color="#ffffff">
                   <strong>{key}: </strong>
                   {value}
                 </Typography>
-                {/* <br /> */}
+                <br />
               </>
             ))}
           </DialogContent>
