@@ -65,7 +65,7 @@ export default function PhotoPopover(props) {
             {Object.entries(props.comment).map(([key, value]) => (
               <>
                 <Typography variant="h6" color="#ffffff">
-                  <strong>{key}: </strong>
+                  {/* <strong>{key}: </strong> */}
                   {value}
                 </Typography>
                 <br />

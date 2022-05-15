@@ -1,7 +1,15 @@
 /*eslint-disable*/
 import React from "react";
 import { Link } from "react-router-dom";
-import { IconButton, Menu, MenuItem, Tooltip, Stack, Box } from "@mui/material";
+import {
+  IconButton,
+  Menu,
+  MenuItem,
+  Tooltip,
+  Stack,
+  Box,
+  Typography,
+} from "@mui/material";
 import makeStyles from "@mui/styles/makeStyles";
 
 // @mui/icons-material
@@ -35,7 +43,7 @@ export default function HeaderLinks(props) {
                 color="white"
                 variant="h5"
                 fontWeight="regular"
-                marginLeft=".5rem"
+                marginLeft="1rem"
               >
                 Projects
               </MKTypography>
@@ -111,7 +119,7 @@ export default function HeaderLinks(props) {
         </IconButton>
 
         <Menu
-        dense
+          dense
           id="basic-menu"
           anchorEl={anchorEl}
           open={open}
@@ -125,6 +133,9 @@ export default function HeaderLinks(props) {
             <Link to="/projects-page">
               <IconButton size="large" onClick={0} color="black">
                 <Devices />
+                <Typography variant="h4" fontWeight="strong" marginLeft="1rem" color="black">
+                  Projects
+                </Typography>
               </IconButton>
             </Link>
           </MenuItem>
@@ -142,6 +153,9 @@ export default function HeaderLinks(props) {
                 color="black"
               >
                 <GitHub />
+                <Typography variant="h4" fontWeight="strong" marginLeft="1rem" color="black">
+                  Github
+                </Typography>
               </IconButton>
             </Tooltip>
           </MenuItem>
@@ -159,6 +173,9 @@ export default function HeaderLinks(props) {
                 color="black"
               >
                 <LinkedIn />
+                <Typography variant="h4" fontWeight="strong" marginLeft="1rem" color="black">
+                  LinkedIn
+                </Typography>
               </IconButton>
             </Tooltip>
           </MenuItem>
@@ -176,6 +193,9 @@ export default function HeaderLinks(props) {
                 color="black"
               >
                 <Instagram />
+                <Typography variant="h4" fontWeight="strong" marginLeft="1rem" color="black">
+                  Instagram
+                </Typography>                
               </IconButton>
             </Tooltip>
           </MenuItem>
