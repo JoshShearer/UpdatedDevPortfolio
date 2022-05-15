@@ -68,14 +68,6 @@ function TabPanel(props) {
   );
 }
 
-const Item = muiStyled(Paper)(({ theme }) => ({
-  ...theme.typography.body2,
-  textAlign: "center",
-  color: theme.palette.text.secondary,
-  height: 60,
-  lineHeight: "60px",
-}));
-
 const darkTheme = createTheme({ palette: { mode: "dark" } });
 const lightTheme = createTheme({ palette: { mode: "light" } });
 
@@ -154,10 +146,7 @@ function ProfilePage() {
               </Typography>
               <br />
               <br />
-              <Box
-                sx={{ bgcolor: "background.paper", width: 800, mx: "auto" }}
-                justifyContent="center"
-              >
+              
                 <AppBar position="static">
                   <Tabs
                     value={value}
@@ -169,14 +158,14 @@ function ProfilePage() {
                     selectionFollowsFocus
                     sx={{ height: 120 }}
                   >
-                    {myTabs.map((tab, key) => {
+                    {myTabs.map((tab, tabKey) => {
                       const Icon = iconComps[tab.tabIcon];
                       return (
                         <Tab
                           iconPosition="bottom"
                           label={tab.tabButton}
                           icon={<Icon fontSize="large" />}
-                          key={key}
+                          key={tabKey}
                         />
                       );
                     })}
@@ -207,7 +196,6 @@ function ProfilePage() {
                     );
                   })}
                 </SwipeableViews>
-              </Box>
             </Grid>
         </MKBox>
       </Card>

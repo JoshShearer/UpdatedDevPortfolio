@@ -16,6 +16,7 @@ export default function InfoArea(props) {
       alignText="center"
       alignItems="center"
       mx="auto"
+      vertical
     >
       <props.icon fontSize="large" color={iconColor} sx={sx} />
       <MKTypography variant="h4" alignText="center">{title}</MKTypography>

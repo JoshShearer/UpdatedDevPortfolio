@@ -2,7 +2,7 @@ export const myTabs = [
   {
     tabButton: "PHOTOGRAPHY",
     tabIcon: "Camera",
-    comment: "Nature photography has been a passion of mine for several years.",
+    comment: "There are so many beautiful places in this world.  I have long been a student and proponent of Photography focused on capturing Natural Scenes.",
     photos: [
       {
         src: "https://live.staticflickr.com/4894/45935502555_2f67f4525e_m.jpg",
@@ -10,7 +10,7 @@ export const myTabs = [
         height: "180",
         comment: {
           Info:"El Calafate Glacier",
-          Location: "Argentina"          
+          Location: "Santa Cruz, Argentina"          
         },
         alt: "20190110_131623"
       },
@@ -30,7 +30,7 @@ export const myTabs = [
         height: "160",
         comment: {
           Info:"Acatenango Volcano",
-          Location: "Gautemala"          
+          Location: "Antigua, Gautemala"          
         },
         alt: "_DSC3436"
       },
@@ -40,8 +40,8 @@ export const myTabs = [
         width: "240",
         height: "180",
         comment: {
-          Info:"Caye Caulker Diving",
-          Location: "Belieze"          
+          Info:"Caye Caulker Island",
+          Location: "Belize"          
         },
         alt: "GOPR0332"
       },
@@ -50,8 +50,8 @@ export const myTabs = [
         width: "240",
         height: "97",
         comment: {
-          Info:"Manizales",
-          Location: "Colombia"          
+          Info:"Coffee Country",
+          Location: "Manizales, Colombia"          
         },
         alt: "20180818_082245"
       },
@@ -61,7 +61,7 @@ export const myTabs = [
         height: "117",
         comment: {
           Info:"Gautape",
-          Location: "Colombia"          
+          Location: "Medellin, Colombia"          
         },
         alt: "20180812_114422"
       }
@@ -70,7 +70,7 @@ export const myTabs = [
   {
     tabButton: "FAVORITE",
     tabIcon: "Favorite",
-    comment: "Wonder Lust has been a large part of my life.",
+    comment: "Wonder Lust has been a large part of my life.  Travel has allowed me to experience other perspectives, cultures, and foods.",
     photos: [
       {
         src: "https://live.staticflickr.com/796/41402022931_5ceeb622e1_m.jpg",
@@ -78,7 +78,7 @@ export const myTabs = [
         height: "180",
         comment: {
           Info:"Bacalar Sunrise",
-          Location: "Mexico"          
+          Location: "Bacalar, Mexico"          
         },
         alt: "20180328_070033"
       },
@@ -88,7 +88,7 @@ export const myTabs = [
         height: "160",
         comment: {
           Info:"Ipanema Sunset",
-          Location: "Brazil"          
+          Location: "Rio De Janeiro, Brazil"          
         },
         alt: "_DSC3372"
       },
@@ -97,8 +97,8 @@ export const myTabs = [
         width: "240",
         height: "117",
         comment: {
-          Info:"Railey Beach",
-          Location: "Thailand"          
+          Info:"Railay Beach",
+          Location: "Krabi, Thailand"          
         },
         alt: "20180801_180845"
       },
@@ -108,8 +108,8 @@ export const myTabs = [
         width: "240",
         height: "180",
         comment: {
-          Info:"Isla Del Sol, Copacabana",
-          Location: "Bolivia"          
+          Info:"Isla Del Sol",
+          Location: " Copacabana, Bolivia"          
         },
         alt: "GOPR4331-2"
       },
@@ -119,7 +119,7 @@ export const myTabs = [
         height: "160",
         comment: {
           Info: "Gautape",
-          Location: "Colombia"          
+          Location: "Medellin, Colombia"          
         },
         alt: "_DSC3742"
       },
@@ -128,8 +128,8 @@ export const myTabs = [
         width: "240",
         height: "135",
         comment: {
-          Info:"Waterfall Cave, Jardin",
-          Location: "Colombia"          
+          Info:"Waterfall Cave",
+          Location: "Jardin, Colombia"          
         },
         alt: "20180902_100627"
       }
@@ -139,7 +139,7 @@ export const myTabs = [
   {
     tabButton: "WORK",
     tabIcon: "Palette",
-    comment: "I have been enjoying working on engineering projects in my free time.",
+    comment: "I have been enjoying working on wide ranging engineering projects in my free time.",
     photos: [
       {
         alt: "...",
@@ -153,7 +153,7 @@ export const myTabs = [
         alt: "...",
         comment: {
           Technology: "Redux State Management",
-          Project:"State intensive front ends.  MTB DApp Exchange"
+          Project:"MTB DApp Exchange"
         },
         src:
           "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.I41ajuzUNAVtZGa7wExkNAHaDD%26pid%3DApi&f=1"
@@ -171,7 +171,7 @@ export const myTabs = [
         alt: "...",
         comment: {
           Technology: "Python Scripting = Web Scraping, Machine Learning, Front/Back",
-          Project:"Brewery, "
+          Project:"Automated Brewery"
         },
         src:
           "https://www.technotification.com/wp-content/uploads/2017/05/Python-programming-compressed.jpg"
@@ -240,7 +240,7 @@ export const myTabs = [
         height: "180",
         comment: {
           Info:"Motorcycles",
-          Location: "Colombia"          
+          Location: "Medellin, Colombia"          
         },
         alt: "G0010856"
       },

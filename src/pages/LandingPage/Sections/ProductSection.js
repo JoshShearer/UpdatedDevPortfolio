@@ -20,8 +20,8 @@ export default function ProductSection() {
   return (
     <MKBox sx={{ flexGrow: 1 }} >
         <Grid container spacing={{ xs: 10, md: 10 }} columns={{ xs: 10, sm: 8, md: 10 }} justifyContent="space-evenly" justifyItems="center" alignText="center" mx="auto">
-        {products.map((product) => 
-          <Grid item xs={2} sm={4} md={3} >         
+        {products.map((product, prodKey) => 
+          <Grid item xs={2} sm={2} md={3} key={prodKey}>         
             <InfoArea
               title={product.title}
               description={product.description}

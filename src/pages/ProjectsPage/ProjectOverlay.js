@@ -155,7 +155,7 @@ export default function ProjectOverlay(props) {
           </DialogActions>
         </Dialog>
         <CardActions>
-        {props.demoLink && 
+        {props.demoLink ?
           <Button
             href={props.demoLink}
             size="large"
@@ -164,7 +164,16 @@ export default function ProjectOverlay(props) {
             className={classes.avatar}
           >
             Demo
-          </Button>}
+          </Button>
+          :
+          <Button
+            href={props.demoLink}
+            size="large"
+            target="_blank"
+            // color="inherit"
+            className={classes.avatar}
+          ></Button>
+          }
           <Button
             href={props.githubLink}
             size="large"

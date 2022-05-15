@@ -9,7 +9,7 @@ export const MyProjects = [
     projectOverview:
       "This is a full stack web app that was designed to be easily portable to mobile platforms via react-native.  This is a simple app meant to allow people to capture their thoughts while traveling and associate them with the locations they occured.",
     keyLessons:
-      "This was a challenging and pivotal project.  It taught me about all the intricasies of the react front-end especially as it relates to state management.",
+      "This was a challenging and pivotal project.  It taught me about all the intricasies of the react front-end especially as it relates to state management.  Additionally, I was learned what really goes into creating a backend for data storage and aquisition.",
     demoLink: "http://react-travel-diary.herokuapp.com",
     githubLink: "https://github.com/JoshShearer/TravelDiary",
     imageLink:
@@ -17,13 +17,13 @@ export const MyProjects = [
   },
   {
     id: 1,
-    title: "Web3 MTB Token Exchange",
+    title: "Web3 Token Exchange",
     skills: "Web 3, Heroku, Blockchain, Redux/Rematch",
     toolset: "Javscript, React, Nextjs, Typescript, Solidity, Truffle, Ganache",
     notableLibraries: "Nextjs, Typescript, Redux/Rematch, Tailwindui, Headwindui, Solidity",
-    projectOverview: "This is built with a Nextjs/Typescript front-end.  It will pull in HD Account data via the metamask add-in in the browser.  The exchange will execute Deposit/Withdraw and buy/sell orders for the local MTB for ETH.  Contracts of written in solidity.",
+    projectOverview: "This is built with a Nextjs/Typescript front-end.  It will pull in HD Account data via the metamask add-in in the browser.  The exchange will execute deposit/withdraw and buy/sell orders for the local MTB Token with ETH.  Contracts of written in solidity.",
     keyLessons:
-      "This project is was a great opportunity to learn modern front end build stacks and incorporating code reliability via typescript, in addition to getting great experience in using and writing web 3 contracts in solidity.",
+      "This project is was a great opportunity to learn modern front end build stacks and incorporating code reliability via typescript, in addition to getting great experience in using and writing web 3 contracts in solidity.  Additionally, Solidity has a great testing library that I was able to utilize in order to reduce contract bugs, making them more robust and reliable.",
     demoLink: "https://my-crypto-exchange.herokuapp.com/",
     githubLink: "https://github.com/JoshShearer/MyCryptoExchange",
     imageLink:
@@ -31,12 +31,12 @@ export const MyProjects = [
   },
   {
     id: 2,
-    title: "Fully Automated Brew Station",
+    title: "Automated Brew Station",
     skills:
       "Beer Making, Procurement, Fabrication, Soldering, Electrical Design, Automation",
     toolset: "Python, Raspberry Pi 4, Linux",
     notableLibraries: "Craft Beer Pi 3",
-    projectOverview: "This was a great project that ended up automating the brewing process and allowed me to really hone in on the recipe process and make the great beers fully repeatable and reliable.  Those great brews are no longer as the behest of chance occurances and minute differences in the recipe that might vary slightly in the manual process.",
+    projectOverview: "This was a great project that ended up automating the brewing process and allowed me to really hone in on the recipe process and make the great beers fully repeatable and reliable.  Those great brews are no longer at the behest of chance occurances and minute differences in the recipe that might vary slightly in the manual process.",
     keyLessons:
       "This project proved very challenging in the breadth required for completion.  Hardware design & procurement, soldiering, fabricating, high and low voltage design as well as knowledge of Python in addition to sensor data verification and aquisition were all required to get this system up and running.",
     // demoLink: "http://react-traveldiary.web.app",
@@ -60,13 +60,13 @@ export const MyProjects = [
   },
   {
     id: 4,
-    title: "Continuous Glucose Monitoring Analysis",
+    title: "Glucose Monitoring",
     skills: "WebScraping, Data Entry Automation",
     toolset: "Python, Numpy, Pandas, matplotlib, Bokeh ",
     notableLibraries: "Pandas",
-    projectOverview: "This project was meant to learn more about my body and how it specifically processes different sources or glucose (sugar).  I used a Dexcom G5 sensor and xDrip to gather and log the raw CGM data.  I them used several Python tools to generate visual aids to viewing understanding how my body reacts to glucose.  These reactions include amplitude and rate of spikes and troughs, how it relates to food eaten and whether exercise occurred slightly before or after the meal.  Several visual aids were used to see how Food, Glucose, Exercise and Sleep all interact to better understand and minimize glucose spikes in my body.",
+    projectOverview: "This project was meant to learn more about my body and how it specifically processes different sources or glucose (sugar).  I used a Dexcom G5 sensor and xDrip to gather and log the raw CGM data.  I then used several Python tools to generate visual aids for viewing and understanding how my body reacts to glucose.  These responses include amplitude and rate of spikes and troughs, how it relates to food eaten and whether exercise occurred slightly before or after the meal.  I was able to utilize these visual aids to see how Food, Glucose, Exercise and Sleep all interact to better understand and minimize glucose spikes in my body.",
     keyLessons:
-      "This project ended up being much more time consuming that expected.  It allowed me to really learn the power of tools like Pandas and Numpy and the tools used in visualizing.",
+      "This project ended up being much more time consuming that expected.  It allowed me to really learn the power of tools like Pandas and Numpy for data processing and Bokeh and Matplot lib for visualizing the data.  I really learned the true power of libraries like numpy and pandas for raw data processing.  The tools really make it easy to process very large, complicated datasets.",
     // demoLink: "http://react-traveldiary.web.app",
     githubLink: "https://github.com/JoshShearer/CGMAnalysis",
     imageLink:
