@@ -36,7 +36,7 @@ import Footer from "layouts/sections/Footer/Footer";
 
 import styled from "styled-components";
 // Images
-import bgImage from "assets/images/IpanemaSunset.avif";
+import bgImage from "assets/images/IpanemaSunset.jpg";
 import avatar from "assets/images/profile-bg.jpg";
 import profile from "assets/images/faces/Josh.png";
 import { myTabs } from "./MyPhotos";
