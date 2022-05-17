@@ -21,7 +21,7 @@ export const MyProjects = [
     skills: "Web 3, Heroku, Blockchain, Redux/Rematch",
     toolset: "Javscript, React, Nextjs, Typescript, Solidity, Truffle, Ganache",
     notableLibraries: "Nextjs, Typescript, Redux/Rematch, Tailwindui, Headwindui, Solidity",
-    projectOverview: "This is built with a Nextjs/Typescript front-end.  It will pull in HD Account data via the metamask add-in in the browser.  The exchange will execute deposit/withdraw and buy/sell orders for the local MTB Token with ETH.  Contracts of written in solidity.",
+    projectOverview: "This is built with a Nextjs/Typescript front-end.  It will pull in HD Account data via the metamask add-in in the browser.  The exchange will execute deposit/withdraw and buy/sell orders for the local MTB Token with ETH.  Contracts are written in solidity.",
     keyLessons:
       "This project is was a great opportunity to learn modern front end build stacks and incorporating code reliability via typescript, in addition to getting great experience in using and writing web 3 contracts in solidity.  Additionally, Solidity has a great testing library that I was able to utilize in order to reduce contract bugs, making them more robust and reliable.",
     demoLink: "https://my-crypto-exchange.herokuapp.com/",
