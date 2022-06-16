@@ -21,7 +21,7 @@ export const MyProjects = [
     toolset: "React, NodeJs, Express, MongoDB, Heroku, JS, Google Maps, Axios",
     notableLibraries: "Material UI",
     projectOverview:
-      "This is a full stack web app that was designed to be easily portable to mobile platforms via react-native.  This is a simple app meant to allow people to capture their thoughts while traveling and associate them with the locations they occured.",
+      "This is a full stack web app that was designed to be easily portable to mobile platforms via react-native.  This is a simple app meant to allow people to capture their thoughts while traveling and associate them with the locations they occurred.",
     keyLessons:
       "This was a challenging and pivotal project.  It taught me about all the intricasies of the react front-end especially as it relates to state management.  Additionally, I learned what really goes into creating a backend for data storage and aquisition.",
     demoLink: "http://react-travel-diary.herokuapp.com",
