@@ -6,7 +6,6 @@ import Card from "@mui/material/Card";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import SectionLinks from "./SectionLinks.js";
 
 // Material Kit 2 React examples
 // import DefaultNavbar from "examples/Navbars/DefaultNavbar";
@@ -17,17 +16,17 @@ import Footer from "layouts/sections/Footer/Footer";
 
 
 // Images
-import bgImage from "assets/images/DSC00419.jpg";
+import bgImage from "assets/images/city-profile.jpg";
 
-function Home() {
+function Resume() {
   return (
     <>
       {/* <PageHeader /> */}
       <HeaderOne
         bgImage={bgImage}
-        title="Developer Page"
-        subTitle="An overview of projects completed"
-        height="100vh"
+        title="Resume Page"
+        subTitle="Work Experience"
+        height="50vh"
       />
       <Card
         sx={{
@@ -55,14 +54,13 @@ function Home() {
               </MKTypography>
               <MKTypography variant="body1" color="text">
                 Welcome. Check out some of the projects that I am working on. I
-                enjoy web development and blockchain/web3. In my free time I
+                enjoy web development and machine learning. In my free time I
                 like to invest and automate the process of decision making.
                 Click below to learn more.
               </MKTypography>
             </Grid>
           </Container>
         </MKBox>
-        <SectionLinks />
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <Footer />
@@ -71,4 +69,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Resume;

@@ -13,7 +13,13 @@ import {
 import makeStyles from "@mui/styles/makeStyles";
 
 // @mui/icons-material
-import { Devices, LinkedIn, GitHub, Instagram } from "@mui/icons-material";
+import {
+  Devices,
+  LinkedIn,
+  GitHub,
+  Instagram,
+  Article,
+} from "@mui/icons-material";
 import MenuIcon from "@mui/icons-material/Menu";
 
 import MKTypography from "components/MKTypography";
@@ -36,6 +42,19 @@ export default function HeaderLinks(props) {
             display: { xs: "none", sm: "none", md: "inline", lg: "inline" },
           }}
         >
+          <Link to="/resume-page">
+            <IconButton size="large" onClick={0} color="white">
+              <Article />
+              <MKTypography
+                color="white"
+                variant="h5"
+                fontWeight="regular"
+                marginLeft="1rem"
+              >
+                Resume
+              </MKTypography>
+            </IconButton>
+          </Link>
           <Link to="/projects-page">
             <IconButton size="large" onClick={0} color="white">
               <Devices />
@@ -130,10 +149,30 @@ export default function HeaderLinks(props) {
           }}
         >
           <MenuItem onClick={handleClose}>
+            <Link to="/resume-page">
+              <IconButton size="large" onClick={0} color="black">
+                <Article />
+                <Typography
+                  variant="h4"
+                  fontWeight="strong"
+                  marginLeft="1rem"
+                  color="black"
+                >
+                  Resume
+                </Typography>
+              </IconButton>
+            </Link>
+            </MenuItem>
+            <MenuItem onClick={handleClose}>
             <Link to="/projects-page">
               <IconButton size="large" onClick={0} color="black">
                 <Devices />
-                <Typography variant="h4" fontWeight="strong" marginLeft="1rem" color="black">
+                <Typography
+                  variant="h4"
+                  fontWeight="strong"
+                  marginLeft="1rem"
+                  color="black"
+                >
                   Projects
                 </Typography>
               </IconButton>
@@ -153,7 +192,12 @@ export default function HeaderLinks(props) {
                 color="black"
               >
                 <GitHub />
-                <Typography variant="h4" fontWeight="strong" marginLeft="1rem" color="black">
+                <Typography
+                  variant="h4"
+                  fontWeight="strong"
+                  marginLeft="1rem"
+                  color="black"
+                >
                   Github
                 </Typography>
               </IconButton>
@@ -173,7 +217,12 @@ export default function HeaderLinks(props) {
                 color="black"
               >
                 <LinkedIn />
-                <Typography variant="h4" fontWeight="strong" marginLeft="1rem" color="black">
+                <Typography
+                  variant="h4"
+                  fontWeight="strong"
+                  marginLeft="1rem"
+                  color="black"
+                >
                   LinkedIn
                 </Typography>
               </IconButton>
@@ -193,9 +242,14 @@ export default function HeaderLinks(props) {
                 color="black"
               >
                 <Instagram />
-                <Typography variant="h4" fontWeight="strong" marginLeft="1rem" color="black">
+                <Typography
+                  variant="h4"
+                  fontWeight="strong"
+                  marginLeft="1rem"
+                  color="black"
+                >
                   Instagram
-                </Typography>                
+                </Typography>
               </IconButton>
             </Tooltip>
           </MenuItem>

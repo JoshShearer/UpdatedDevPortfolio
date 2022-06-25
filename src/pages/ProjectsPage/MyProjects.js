@@ -25,7 +25,7 @@ export const MyProjects = [
     keyLessons:
       "This project is was a great opportunity to learn modern front end build stacks and incorporate code reliability via typescript, in addition to getting great experience in using and writing web 3 contracts in solidity.  I found that Solidity has a great testing library that I was able to utilize in order to reduce contract bugs, making them more robust and reliable.",
     demoLink: "https://my-crypto-exchange.herokuapp.com/",
-    githubLink: "https://github.com/JoshShearer/MyCryptoExchange",
+    githubLink: "https://github.com/JoshShearer/TokenExchange",
     imageLink:
       "https://bitcoinexchangeguide.com/wp-content/uploads/2019/03/Delving-into-Blockchain-as-the-Origin-Point-for-the-new-Generation-of-dApps-on-Web-3-0.jpg",
   },

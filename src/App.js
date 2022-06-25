@@ -9,6 +9,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import theme from "assets/theme";
 
 import Home from "./pages/Home/Home";
+import ResumePage from "./pages/ResumePage/Resume";
 import LandingPage from "pages/LandingPage/LandingPage";
 import TechnicalPage from "pages/TechnicalPage/TechnicalPage";
 import ProfilePage from "pages/ProfilePage/ProfilePage";
@@ -28,8 +29,9 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Routes>
+        <Route path="/resume-page" element={<ResumePage /> } />
         <Route path="/landing-page" element={<LandingPage />} />
-      <Route path="/profile-page" element={<ProfilePage />} />
+        <Route path="/profile-page" element={<ProfilePage />} />
         <Route path="/projects-page" element={<ProjectsPage />} /> 
         <Route path="/technical-page" element={<TechnicalPage />} />
         <Route path="/" element={<Home />} />

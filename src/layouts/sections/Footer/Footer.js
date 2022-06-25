@@ -92,6 +92,7 @@ SimpleFooter.defaultProps = {
       name: "Technical Skills",
     },
     { href: "/landing-page", name: "Contact" },
+    { href: "/resume-page", name: "Resume" },
   ],
   light: false,
 };
