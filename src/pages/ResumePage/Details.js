@@ -1,22 +1,39 @@
-export const ResumeDetails = [
+export const ResumeDetails = {
+  "Education": 
   {
     id: 0,
     title: "Education",
-    Degrees: {
-      BS: ["B.S. Electrical Engineering", "Washington State University, 2009"],
-    },
+    Degrees: [
+      ["B.S. Electrical Engineering", "Washington State University, 2009"]],
   },
+  "Experience":
   {
-    id: 1,
+    id: 1,  
     title: "Experience",
     jobs: [
       {
-        Company: "Valin Corp",
-        Title: "Sales Engineer/Account Manager",
-        StartDate: "June 2012",
-        EndDate: "Feb 2018",
+        Company: "RoboBrowser",
+        Title: "Software Developer",
+        StartDate: "Jan 2022",
+        EndDate: "Current",
         Overview: "",
-        Bullets: "",
+        Bullets: [],
+      },
+      {
+        Company: "Sols App",
+        Title: "Blockchain Engineer",
+        StartDate: "May 2022",
+        EndDate: "Current",
+        Overview: "",
+        Bullets: [],
+      },
+      {
+        Company: "Sols App",
+        Title: "Blockchain Engineer",
+        StartDate: "May 2022",
+        EndDate: "Current",
+        Overview: "",
+        Bullets: [],
       },
       {
         Company: "Journey South",
@@ -74,6 +91,7 @@ export const ResumeDetails = [
     }
     ],
   },
+  "Skills":
   {
     id: 2,
     title: "Skills",
@@ -122,5 +140,5 @@ export const ResumeDetails = [
         ["Selenium", 45],
       ],
     },
-  },
-];
+  }
+}

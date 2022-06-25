@@ -3,9 +3,13 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
+import { styled } from '@mui/material/styles';
+
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
+
+import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
 
 // Material Kit 2 React examples
 // import DefaultNavbar from "examples/Navbars/DefaultNavbar";
@@ -14,9 +18,22 @@ import HeaderOne from "layouts/sections/navigation/HeaderOne/HeaderOne";
 
 import Footer from "layouts/sections/Footer/Footer";
 
+import { ResumeDetails } from "pages/ResumePage/Details";
 
 // Images
 import bgImage from "assets/images/city-profile.jpg";
+
+const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
+  height: 10,
+  borderRadius: 5,
+  [`&.${linearProgressClasses.colorPrimary}`]: {
+    backgroundColor: theme.palette.grey[theme.palette.mode === 'light' ? 200 : 800],
+  },
+  [`& .${linearProgressClasses.bar}`]: {
+    borderRadius: 5,
+    backgroundColor: theme.palette.mode === 'light' ? '#1a90ff' : '#308fe8',
+  },
+}));
 
 function Resume() {
   return (
@@ -25,7 +42,7 @@ function Resume() {
       <HeaderOne
         bgImage={bgImage}
         title="Resume Page"
-        subTitle="Work Experience"
+        subTitle="Relevant Experience"
         height="50vh"
       />
       <Card
@@ -49,15 +66,19 @@ function Resume() {
               alignItems="left"
               sx={{ textAlign: "left", my: 6, mx: "auto", px: 0.75 }}
             >
+            {ResumeDetails.Education.Degrees.map((degree) => 
+            <div>
               <MKTypography variant="h2" fontWeight="bold">
-                A passion for challenging projects
+                {degree[0]}
               </MKTypography>
-              <MKTypography variant="body1" color="text">
-                Welcome. Check out some of the projects that I am working on. I
-                enjoy web development and machine learning. In my free time I
-                like to invest and automate the process of decision making.
-                Click below to learn more.
+              <MKTypography variant="body1" color="text"> 
+              ` {degree[1]}
               </MKTypography>
+              <BorderLinearProgress variant="determinate" value={50} />
+              <LinearProgress variant="determinate" value={25} />
+              </div>
+              )
+            }
             </Grid>
           </Container>
         </MKBox>
