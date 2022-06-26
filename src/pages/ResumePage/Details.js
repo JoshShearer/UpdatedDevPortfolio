@@ -4,7 +4,8 @@ export const ResumeDetails = {
     id: 0,
     title: "Education",
     Degrees: [
-      ["B.S. Electrical Engineering", "Washington State University, 2009"]],
+      ["B.S. Electrical Engineering", "Washington State University, 2009"],
+      ["Associate of Arts", "Peninsula Community College, 2002"]],
   },
   "Experience":
   {

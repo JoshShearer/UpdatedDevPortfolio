@@ -3,13 +3,15 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
+import LinearProgress, {
+  linearProgressClasses,
+} from "@mui/material/LinearProgress";
 
 // Material Kit 2 React examples
 // import DefaultNavbar from "examples/Navbars/DefaultNavbar";
@@ -27,11 +29,12 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   height: 10,
   borderRadius: 5,
   [`&.${linearProgressClasses.colorPrimary}`]: {
-    backgroundColor: theme.palette.grey[theme.palette.mode === 'light' ? 200 : 800],
+    backgroundColor:
+      theme.palette.grey[theme.palette.mode === "light" ? 200 : 800],
   },
   [`& .${linearProgressClasses.bar}`]: {
     borderRadius: 5,
-    backgroundColor: theme.palette.mode === 'light' ? '#1a90ff' : '#308fe8',
+    backgroundColor: theme.palette.mode === "light" ? "#1a90ff" : "#308fe8",
   },
 }));
 
@@ -66,19 +69,49 @@ function Resume() {
               alignItems="left"
               sx={{ textAlign: "left", my: 6, mx: "auto", px: 0.75 }}
             >
-            {ResumeDetails.Education.Degrees.map((degree) => 
-            <div>
               <MKTypography variant="h2" fontWeight="bold">
-                {degree[0]}
+                Work Experience
               </MKTypography>
-              <MKTypography variant="body1" color="text"> 
-              ` {degree[1]}
+              {ResumeDetails.Experience.jobs.map((job, key) => (
+                <div>
+                  <MKTypography variant="h5" fontWeight="bold">
+                    {job.Company+ "  " + job.StartDate + " - " + job.EndDate}
+                  </MKTypography>
+                  <MKTypography variant="body1" color="text">
+                    {job.Title}
+                  </MKTypography>
+                </div>
+              ))}
+              <MKTypography variant="h2" fontWeight="bold">
+                Skills
               </MKTypography>
-              <BorderLinearProgress variant="determinate" value={50} />
-              <LinearProgress variant="determinate" value={25} />
-              </div>
-              )
-            }
+              {/* {ResumeDetails.Skills.Skills.map((skill) => (
+                <div>
+                  <MKTypography variant="h5" fontWeight="bold">
+                    {skill}
+                  </MKTypography>
+                  <MKTypography variant="body1" color="text">
+                    {degree[1]}
+                  </MKTypography>
+                  <BorderLinearProgress variant="determinate" value={50} />
+                  <LinearProgress variant="determinate" value={25} />
+                </div>
+              ))} */}
+              <MKTypography variant="h2" fontWeight="bold">
+                Education
+              </MKTypography>
+              {ResumeDetails.Education.Degrees.map((degree) => (
+                <div>
+                  <MKTypography variant="h5" fontWeight="bold">
+                    {degree[0]}
+                  </MKTypography>
+                  <MKTypography variant="body1" color="text">
+                    {degree[1]}
+                  </MKTypography>
+                  {/* <BorderLinearProgress variant="determinate" value={50} /> */}
+                  {/* <LinearProgress variant="determinate" value={25} /> */}
+                </div>
+              ))}
             </Grid>
           </Container>
         </MKBox>
