@@ -19,6 +19,7 @@
     "node-sass": "7.0.1",
     "nouislider": "15.5.1",
     "prop-types": "15.8.1",
+    "rc-progress": "^3.3.3",
     "react": "17.0.2",
     "react-copy-to-clipboard": "^5.0.4",
     "react-countup": "^6.1.1",

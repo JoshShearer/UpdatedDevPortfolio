@@ -41,13 +41,6 @@ import avatar from "assets/images/profile-bg.jpg";
 import profile from "assets/images/faces/Josh.png";
 import { myTabs } from "./MyPhotos";
 
-type TabPanelProps = {
-  children?: React.ReactNode,
-  dir?: string,
-  index: number,
-  value: number,
-};
-
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 

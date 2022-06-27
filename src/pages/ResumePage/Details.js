@@ -14,11 +14,11 @@ export const ResumeDetails = {
     jobs: [
       {
         Company: "RoboBrowser",
-        Title: "Software Developer",
+        Title: "Consultant",
         StartDate: "Jan 2022",
         EndDate: "Current",
-        Overview: "",
-        Bullets: [],
+        Overview: "Tooling for Automated Browser Testing Solutions",
+        Bullets: []
       },
       {
         Company: "Sols App",
@@ -26,15 +26,23 @@ export const ResumeDetails = {
         StartDate: "May 2022",
         EndDate: "Current",
         Overview: "",
-        Bullets: [],
+        Bullets: []
       },
       {
-        Company: "Sols App",
+        Company: "Learning Systems",
         Title: "Blockchain Engineer",
-        StartDate: "May 2022",
-        EndDate: "Current",
-        Overview: "",
-        Bullets: [],
+        StartDate: "July 2019",
+        EndDate: "July 2021",
+        Overview: "Applying Machine Learning for small business growth",
+        Bullets: []
+      },
+      {
+        Company: "Florianopolis English",
+        Title: "Language Emersion and EASL Instructor",
+        StartDate: "Feb 2019",
+        EndDate: "July 2019",
+        Overview: "English as a second language teacher, and Brazilian Portuguese Immersion",
+        Bullets: []
       },
       {
         Company: "Journey South",
@@ -46,7 +54,7 @@ export const ResumeDetails = {
             "Spanish Language Immersion",
             "Portuguese Language Immersion",
             "Embassador to the US"
-        ],
+        ]
       },
       {
         Company: "Valin Corp",
@@ -67,8 +75,8 @@ export const ResumeDetails = {
             "10% - 20% growth year over year. Accounts were largely project driven.", 
             "Grew top 3 accounts from less than $10,000 to over $200,000 in a single year by leveraging engineering skills and product knowledge.", 
             "Won and managed multiple ~$500,000 sales. Developed lasting relationships and leveraged outstanding performance with customer to create partnership that achieved additional $150,000 sale and substantial future business.", 
-            "Maintained margin growth on all large (high dollar) projects." ,
-        ],
+            "Maintained margin growth on all large (high dollar) projects."
+        ]
       },
       {
         Company: "Ares Corp",
@@ -80,7 +88,7 @@ export const ResumeDetails = {
             "I&C Engineer for WESF K1/K3 Exhauster Upgrade Project. Project scope included upgrading/replacing a portion of the Hanford WESF facility control system, filter trains, stack, and stack monitor. Tasks included developing P&ID’s, instrument selection, and control system design. Documentation included procurement specification for the control system as well as the stack monitor.",
             "I&C Engineer for 100-D Bioremediation Project. The project included four wells and a bioremediation filtration station. Tasks included control system process design and P&ID development. Selected instruments and developed system elementary drawings. Programmed PLC system with Siemens S7 development software. Language used was primarily ladder logic with some STL. Programmed HMI using Siemens WinCC development Suite. Created control system support documentation including Sequence of Operations, system requirements documentation and operator user manual.",
             "I&C Engineer for Alpha Caisson Waste Retrieval Project (ACWRP). The project consisted of designing a fully automated shielded waste retrieval center. Tasks included facility process design. Design included proximity switches, radiation monitors, radiation hardened cameras, limit switches, and motor controllers. Significantly contributed to P&ID development."
-        ],
+        ]
       },
       {
         Company: "Columbia Community College",
@@ -96,49 +104,49 @@ export const ResumeDetails = {
   {
     id: 2,
     title: "Skills",
-    Skills: {
+    Breakout: {
       JavaScript: [
-        ["React", 90],
-        ["ReactN", 30],
-        ["Nextjs", 75],
-        ["Typescript", 70],
+        ["React", 90, "#3366FF"],
+        ["ReactN", 30, "#3366FF"],
+        ["Nextjs", 75, "#3366FF"],
+        ["Typescript", 70, "#3366FF"],
       ],
       StateManagement: [
-        ["Redux", 70],
-        ["Rematch", 85],
+        ["Redux", 70, "#669999"],
+        ["Rematch", 85, "#669999"],
       ],
       Styling: [
-        ["CSS", 70],
-        ["Tailwindui", 90],
-        ["MaterialUI", 60],
+        ["CSS", 70, "#669966"],
+        ["Tailwindui", 90, "#669966"],
+        ["MaterialUI", 60, "#669966"],
       ],
       DataBase: [
-        ["MongoDB", 50],
-        ["SQL", 50],
+        ["MongoDB", 50, "#CCCCCC"],
+        ["SQL", 50, "#CCCCCC"],
       ],
       Backend: [
-        ["NodeJS", 55],
-        ["Express", 55],
-        ["JavaScript", 90],
+        ["NodeJS", 55, "#993300"],
+        ["Express", 55, "#993300"],
+        ["JavaScript", 90, "#993300"],
       ],
       Tools: [
-        ["FireBase", 60],
-        ["Heroku", 60],
-        ["Docker", 30],
+        ["FireBase", 60, "#66cc99"],
+        ["Heroku", 60, "#66cc99"],
+        ["Docker", 30, "#66cc99"],
       ],
       Blockchain: [
-        ["Web3", 65],
-        ["Solidity", 69],
-        ["Ethereum", 70],
-        ["Smart Contracts", 65],
+        ["Web3", 65, "#000033"],
+        ["Solidity", 69, "#000033"],
+        ["Ethereum", 70, "#000033"],
+        ["Smart Contracts", 65, "#000033"],
       ],
       Python: [
-        ["Python", 70],
-        ["Pandas", 60],
-        ["Numpy", 60],
-        ["TensorFlow", 40],
-        ["NLP", 35],
-        ["Selenium", 45],
+        ["Python", 70, "#666666"],
+        ["Pandas", 60, "#666666"],
+        ["Numpy", 60, "#666666"],
+        ["TensorFlow", 40, "#666666"],
+        ["NLP", 35, "#666666"],
+        ["Selenium", 45, "#666666"],
       ],
     },
   }

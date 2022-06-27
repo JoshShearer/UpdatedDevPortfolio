@@ -1,44 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
-
+import { Line } from "rc-progress";
+import SwipeableViews from "react-swipeable-views";
 import { styled } from "@mui/material/styles";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-
-import LinearProgress, {
-  linearProgressClasses,
-} from "@mui/material/LinearProgress";
-
-// Material Kit 2 React examples
-// import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-
+import {
+  AppBar,
+  Tabs,
+  Tab,
+  createTheme,
+  useTheme,
+  ButtonBase,
+} from "@mui/material";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import HeaderOne from "layouts/sections/navigation/HeaderOne/HeaderOne";
 
 import Footer from "layouts/sections/Footer/Footer";
 
 import { ResumeDetails } from "pages/ResumePage/Details";
-
+import profile from "assets/images/faces/Josh.png";
 // Images
 import bgImage from "assets/images/city-profile.jpg";
 
-const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
-  height: 10,
-  borderRadius: 5,
-  [`&.${linearProgressClasses.colorPrimary}`]: {
-    backgroundColor:
-      theme.palette.grey[theme.palette.mode === "light" ? 200 : 800],
-  },
-  [`& .${linearProgressClasses.bar}`]: {
-    borderRadius: 5,
-    backgroundColor: theme.palette.mode === "light" ? "#1a90ff" : "#308fe8",
-  },
-}));
+const Img = styled("img")({
+  margin: "auto",
+  display: "block",
+  maxWidth: "100%",
+  maxHeight: "100%",
+});
+
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`full-width-tabpanel-${index}`}
+      aria-labelledby={`full-width-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <MKBox sx={{ p: 1 }}>
+          <MKTypography>{children}</MKTypography>
+        </MKBox>
+      )}
+    </div>
+  );
+}
 
 function Resume() {
+  const [value, setValue] = useState(0);
+  const theme = useTheme();
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  const handleChangeIndex = (index) => {
+    setValue(index);
+  };
+
   return (
     <>
       {/* <PageHeader /> */}
@@ -60,7 +86,34 @@ function Resume() {
         }}
       >
         <MKBox component="section" my={6} py={6}>
-          <Container>
+          <Grid container spacing={2}>
+            <Grid item sx={{mx:'auto'}}>
+              <ButtonBase sx={{ width: 200, height: 200 }}>
+                <Img src={profile} />
+              </ButtonBase>
+              <br /><br />
+              <MKTypography variant="h2" textAlign="center">
+                Josh Shearer
+              </MKTypography>
+              <MKTypography variant="h4" fontWeight="light" textAlign="center" >
+                Full Stack Blockchain Engineer
+              </MKTypography>
+              <MKTypography textAlign="center" >
+              <LocationOnIcon />
+                Seattle, WA
+              </MKTypography>
+              <br/>
+              <MKTypography variant="h4" fontWeight="light" >
+                360.461.3810
+              </MKTypography>
+              <br/>
+              <MKTypography variant="h4">
+                About Me
+              </MKTypography>
+              <MKTypography variant="body1">
+                I enjoy 
+              </MKTypography>
+            </Grid>
             <Grid
               item
               xs={12}
@@ -69,51 +122,111 @@ function Resume() {
               alignItems="left"
               sx={{ textAlign: "left", my: 6, mx: "auto", px: 0.75 }}
             >
-              <MKTypography variant="h2" fontWeight="bold">
+              <MKTypography variant="h4" fontWeight="bold" textAlign="center">
                 Work Experience
               </MKTypography>
+              <br />
               {ResumeDetails.Experience.jobs.map((job, key) => (
                 <div>
-                  <MKTypography variant="h5" fontWeight="bold">
-                    {job.Company+ "  " + job.StartDate + " - " + job.EndDate}
+                  <MKTypography variant="h6" fontWeight="bold">
+                    {job.Company + " - " + job.Title}
                   </MKTypography>
-                  <MKTypography variant="body1" color="text">
-                    {job.Title}
+                  <MKTypography variant="body2" color="text">
+                    {job.StartDate + " - " + job.EndDate}
                   </MKTypography>
+                  <MKTypography variant="body2" color="black">
+                    {job.Overview}
+                  </MKTypography>
+                  <br />
+                  <ul>
+                    {job.Bullets.map((point) => (
+                      <MKTypography
+                        variant="body2"
+                        color="black"
+                        fontWeight="light"
+                      >
+                        <li>{point}</li>
+                      </MKTypography>
+                    ))}
+                  </ul>
+                  <br />
                 </div>
               ))}
-              <MKTypography variant="h2" fontWeight="bold">
+              <br />
+              <MKTypography variant="h4" fontWeight="bold" textAlign="center">
                 Skills
               </MKTypography>
-              {/* {ResumeDetails.Skills.Skills.map((skill) => (
-                <div>
-                  <MKTypography variant="h5" fontWeight="bold">
-                    {skill}
-                  </MKTypography>
-                  <MKTypography variant="body1" color="text">
-                    {degree[1]}
-                  </MKTypography>
-                  <BorderLinearProgress variant="determinate" value={50} />
-                  <LinearProgress variant="determinate" value={25} />
-                </div>
-              ))} */}
-              <MKTypography variant="h2" fontWeight="bold">
+              <br />
+
+              <AppBar position="static">
+                <Tabs
+                  value={value}
+                  onChange={handleChange}
+                  indicatorColor="secondary"
+                  textColor="inherit"
+                  variant="fullWidth"
+                  aria-label="full width tabs example"
+                  selectionFollowsFocus
+                  // sx={{ height: 120 }}
+                >
+                  {Object.keys(ResumeDetails.Skills.Breakout).map(
+                    (skill, sKey) => {
+                      return <Tab label={skill} key={sKey} />;
+                    }
+                  )}
+                </Tabs>
+              </AppBar>
+              <SwipeableViews
+                axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+                index={value}
+                onChangeIndex={handleChangeIndex}
+              >
+                {Object.keys(ResumeDetails.Skills.Breakout).map(
+                  (skills, sKey) => {
+                    return (
+                      <TabPanel
+                        value={value}
+                        dir={theme.direction}
+                        index={sKey}
+                      >
+                        {ResumeDetails.Skills.Breakout[skills].map(
+                          (skill, tabKey) => {
+                            return (
+                              <div>
+                                <MKTypography variant="h5" fontWeight="bold">
+                                  {skill[0]}
+                                </MKTypography>
+                                <Line
+                                  percent={skill[1]}
+                                  strokeWidth={3}
+                                  strokeColor={skill[2]}
+                                />
+                              </div>
+                            );
+                          }
+                        )}
+                      </TabPanel>
+                    );
+                  }
+                )}
+              </SwipeableViews>
+
+              <br />
+              <MKTypography variant="h4" fontWeight="bold" textAlign="center">
                 Education
               </MKTypography>
               {ResumeDetails.Education.Degrees.map((degree) => (
                 <div>
-                  <MKTypography variant="h5" fontWeight="bold">
+                  <MKTypography variant="h6" fontWeight="bold">
                     {degree[0]}
                   </MKTypography>
-                  <MKTypography variant="body1" color="text">
+                  <MKTypography variant="body2" color="text">
                     {degree[1]}
                   </MKTypography>
-                  {/* <BorderLinearProgress variant="determinate" value={50} /> */}
-                  {/* <LinearProgress variant="determinate" value={25} /> */}
                 </div>
               ))}
             </Grid>
-          </Container>
+          </Grid>
         </MKBox>
       </Card>
       <MKBox pt={6} px={1} mt={6}>
