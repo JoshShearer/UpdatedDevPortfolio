@@ -1,20 +1,14 @@
 import React, { useState } from "react";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import Card from "@mui/material/Card";
-import { Line } from "rc-progress";
-import SwipeableViews from "react-swipeable-views";
 import { styled } from "@mui/material/styles";
+import RenderSkills from "./Skills";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import {
-  AppBar,
-  Tabs,
-  Tab,
-  createTheme,
-  useTheme,
+  Grid,
+  Card,
+  Container,
   ButtonBase,
 } from "@mui/material";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
@@ -34,40 +28,10 @@ const Img = styled("img")({
   maxHeight: "100%",
 });
 
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`full-width-tabpanel-${index}`}
-      aria-labelledby={`full-width-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <MKBox sx={{ p: 1 }}>
-          <MKTypography>{children}</MKTypography>
-        </MKBox>
-      )}
-    </div>
-  );
-}
-
 function Resume() {
-  const [value, setValue] = useState(0);
-  const theme = useTheme();
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
-  const handleChangeIndex = (index) => {
-    setValue(index);
-  };
 
   return (
     <>
-      {/* <PageHeader /> */}
       <HeaderOne
         bgImage={bgImage}
         title="Resume Page"
@@ -87,7 +51,7 @@ function Resume() {
       >
         <MKBox component="section" my={6} py={6}>
           <Grid container spacing={2}>
-            <Grid item sx={{mx:'auto'}}>
+            <Grid item sx={{mx:'auto'}} xs={3}  >
               <ButtonBase sx={{ width: 200, height: 200 }}>
                 <Img src={profile} />
               </ButtonBase>
@@ -111,7 +75,7 @@ function Resume() {
                 About Me
               </MKTypography>
               <MKTypography variant="body1">
-                I enjoy 
+                I enjoy building applications  that provide a great user experience and solve difficult problems in a reliable way. 
               </MKTypography>
             </Grid>
             <Grid
@@ -153,64 +117,7 @@ function Resume() {
                 </div>
               ))}
               <br />
-              <MKTypography variant="h4" fontWeight="bold" textAlign="center">
-                Skills
-              </MKTypography>
-              <br />
-
-              <AppBar position="static">
-                <Tabs
-                  value={value}
-                  onChange={handleChange}
-                  indicatorColor="secondary"
-                  textColor="inherit"
-                  variant="fullWidth"
-                  aria-label="full width tabs example"
-                  selectionFollowsFocus
-                  // sx={{ height: 120 }}
-                >
-                  {Object.keys(ResumeDetails.Skills.Breakout).map(
-                    (skill, sKey) => {
-                      return <Tab label={skill} key={sKey} />;
-                    }
-                  )}
-                </Tabs>
-              </AppBar>
-              <SwipeableViews
-                axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-                index={value}
-                onChangeIndex={handleChangeIndex}
-              >
-                {Object.keys(ResumeDetails.Skills.Breakout).map(
-                  (skills, sKey) => {
-                    return (
-                      <TabPanel
-                        value={value}
-                        dir={theme.direction}
-                        index={sKey}
-                      >
-                        {ResumeDetails.Skills.Breakout[skills].map(
-                          (skill, tabKey) => {
-                            return (
-                              <div>
-                                <MKTypography variant="h5" fontWeight="bold">
-                                  {skill[0]}
-                                </MKTypography>
-                                <Line
-                                  percent={skill[1]}
-                                  strokeWidth={3}
-                                  strokeColor={skill[2]}
-                                />
-                              </div>
-                            );
-                          }
-                        )}
-                      </TabPanel>
-                    );
-                  }
-                )}
-              </SwipeableViews>
-
+              <RenderSkills Skills={ResumeDetails.Skills.Breakout} />
               <br />
               <MKTypography variant="h4" fontWeight="bold" textAlign="center">
                 Education

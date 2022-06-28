@@ -105,13 +105,13 @@ export const ResumeDetails = {
     id: 2,
     title: "Skills",
     Breakout: {
-      JavaScript: [
+      "Java Script": [
         ["React", 90, "#3366FF"],
         ["ReactN", 30, "#3366FF"],
         ["Nextjs", 75, "#3366FF"],
         ["Typescript", 70, "#3366FF"],
       ],
-      StateManagement: [
+      "State Management": [
         ["Redux", 70, "#669999"],
         ["Rematch", 85, "#669999"],
       ],
@@ -120,7 +120,7 @@ export const ResumeDetails = {
         ["Tailwindui", 90, "#669966"],
         ["MaterialUI", 60, "#669966"],
       ],
-      DataBase: [
+      "Data Base": [
         ["MongoDB", 50, "#CCCCCC"],
         ["SQL", 50, "#CCCCCC"],
       ],
