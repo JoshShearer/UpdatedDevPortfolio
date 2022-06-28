@@ -70,7 +70,7 @@ export default function HeaderLinks(props) {
           </Link>
 
           <Tooltip
-            id="instagram-github"
+            id="github"
             title="Check out my Github"
             placement={window.innerWidth > 959 ? "top" : "left"}
           >
@@ -85,7 +85,7 @@ export default function HeaderLinks(props) {
           </Tooltip>
 
           <Tooltip
-            id="instagram-linkedin"
+            id="linkedin"
             title="My LinkedIn"
             size="large"
             placement={window.innerWidth > 959 ? "top" : "left"}

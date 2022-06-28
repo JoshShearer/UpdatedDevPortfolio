@@ -92,10 +92,13 @@ function ProjectsPage() {
              <MKTypography variant="h2" fontWeight="bold" color="dark">
                 Active Projects
               </MKTypography>
+              <br/>
               <MKTypography variant="body1" color="dark">
                 My interests have led me to study and work on many
                 applications most recently web 3 and smart contracts based around Ethereum and Full Stack Web Development based around Java and packages like React, Nextjs, and Typescript.  Additionally, I have enjoyed learning and using the power of Python in applications focused on Machine Learning and WebScraping/Browser Automation.
               </MKTypography>
+              <br/>
+
               <MyButton
                   href="/technical-page"
                   size="large"

@@ -2,16 +2,17 @@ import React, { useState } from "react";
 import { styled } from "@mui/material/styles";
 import RenderSkills from "./Skills";
 
+// @mui/icons-material
+import {
+  LinkedIn,
+  GitHub,
+  Instagram,
+} from "@mui/icons-material";
+
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import {
-  Grid,
-  Card,
-  Container,
-  ButtonBase,
-} from "@mui/material";
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { Grid, Card, ButtonBase, Typography, IconButton, Tooltip, } from "@mui/material";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 import HeaderOne from "layouts/sections/navigation/HeaderOne/HeaderOne";
 
 import Footer from "layouts/sections/Footer/Footer";
@@ -22,14 +23,12 @@ import profile from "assets/images/faces/Josh.png";
 import bgImage from "assets/images/city-profile.jpg";
 
 const Img = styled("img")({
-  margin: "auto",
   display: "block",
   maxWidth: "100%",
   maxHeight: "100%",
 });
 
 function Resume() {
-
   return (
     <>
       <HeaderOne
@@ -50,33 +49,97 @@ function Resume() {
         }}
       >
         <MKBox component="section" my={6} py={6}>
-          <Grid container spacing={2}>
-            <Grid item sx={{mx:'auto'}} xs={3}  >
-              <ButtonBase sx={{ width: 200, height: 200 }}>
+          <Grid
+            container
+            spacing={2}
+            justify="center"
+            justifyContent="center"
+            display="flex"
+          >
+            <Grid item sx={{ mx: "auto" }} xs={3}>
+              <ButtonBase sx={{ width: 200, height: 200, left: "25%" }}>
                 <Img src={profile} />
               </ButtonBase>
-              <br /><br />
-              <MKTypography variant="h2" textAlign="center">
+              <br />
+              <br />
+              <Typography fontFamily="cambria" variant="h2" textAlign="center">
                 Josh Shearer
-              </MKTypography>
-              <MKTypography variant="h4" fontWeight="light" textAlign="center" >
+              </Typography>
+              <Typography
+                fontFamily="cambria"
+                variant="h4"
+                fontWeight="light"
+                textAlign="center"
+              >
                 Full Stack Blockchain Engineer
-              </MKTypography>
-              <MKTypography textAlign="center" >
-              <LocationOnIcon />
+              </Typography>
+              <Typography fontFamily="cambria" textAlign="center">
+                <LocationOnIcon />
                 Seattle, WA
-              </MKTypography>
-              <br/>
-              <MKTypography variant="h4" fontWeight="light" >
+              </Typography>
+              <br />
+              <Typography fontFamily="cambria" variant="h4" fontWeight="light">
                 360.461.3810
-              </MKTypography>
-              <br/>
-              <MKTypography variant="h4">
+              </Typography>
+              <Typography fontFamily="cambria" variant="h4" fontWeight="light">
+                <a href="mailto:ShearerJosh@hotmail.com">
+                  SheareJosh@hotmail.com
+                </a>
+              </Typography>
+              <Tooltip
+                id="github"
+                title="Check out my Github"
+                placement={window.innerWidth > 959 ? "top" : "left"}
+              >
+                <IconButton
+                  href="https://github.com/JoshShearer"
+                  target="_blank"
+                  size="large"
+                  // color="secondary"
+                >
+                  <GitHub />
+                </IconButton>
+              </Tooltip>
+
+              <Tooltip
+                id="linkedin"
+                title="My LinkedIn"
+                size="large"
+                placement={window.innerWidth > 959 ? "top" : "left"}
+              >
+                <IconButton
+                  href="https://www.linkedin.com/in/joshshearer/"
+                  target="_blank"
+                  // color="secondary"
+                >
+                  <LinkedIn />
+                </IconButton>
+              </Tooltip>
+              <Tooltip
+                id="instagram-tooltip"
+                title="Follow me on instagram"
+                placement={window.innerWidth > 959 ? "top" : "left"}
+              >
+                <IconButton
+                  href="https://www.instagram.com/j_shearer83"
+                  target="_blank"
+                  size="large"
+                  // color="secondary"
+                >
+                  <Instagram />
+                </IconButton>
+              </Tooltip>
+              <br />
+              <br />
+              <Typography fontFamily="cambria" variant="h4">
                 About Me
-              </MKTypography>
-              <MKTypography variant="body1">
-                I enjoy building applications  that provide a great user experience and solve difficult problems in a reliable way. 
-              </MKTypography>
+              </Typography>
+              <br />
+              <Typography fontFamily="cambria" variant="body1">
+                I enjoy building applications that provide a great user
+                experience and solve difficult problems without compromising
+                reliability or security.
+              </Typography>
             </Grid>
             <Grid
               item
@@ -86,31 +149,52 @@ function Resume() {
               alignItems="left"
               sx={{ textAlign: "left", my: 6, mx: "auto", px: 0.75 }}
             >
-              <MKTypography variant="h4" fontWeight="bold" textAlign="center">
+              <Typography
+                fontFamily="cambria"
+                variant="h4"
+                fontWeight="bold"
+                textAlign="center"
+              >
                 Work Experience
-              </MKTypography>
+              </Typography>
               <br />
               {ResumeDetails.Experience.jobs.map((job, key) => (
                 <div>
-                  <MKTypography variant="h6" fontWeight="bold">
+                  <Typography
+                    fontFamily="cambria"
+                    variant="h5"
+                    fontWeight="bold"
+                  >
                     {job.Company + " - " + job.Title}
-                  </MKTypography>
-                  <MKTypography variant="body2" color="text">
+                  </Typography>
+                  <Typography
+                    fontFamily="cambria"
+                    variant="h6"
+                    color="text"
+                    fontWeight="normal"
+                    fontSize="16"
+                    fontStyle="italic"
+                  >
                     {job.StartDate + " - " + job.EndDate}
-                  </MKTypography>
-                  <MKTypography variant="body2" color="black">
+                  </Typography>
+                  <Typography
+                    fontFamily="cambria"
+                    variant="body2"
+                    color="black"
+                  >
                     {job.Overview}
-                  </MKTypography>
+                  </Typography>
                   <br />
                   <ul>
                     {job.Bullets.map((point) => (
-                      <MKTypography
+                      <Typography
+                        fontFamily="cambria"
                         variant="body2"
                         color="black"
                         fontWeight="light"
                       >
                         <li>{point}</li>
-                      </MKTypography>
+                      </Typography>
                     ))}
                   </ul>
                   <br />
@@ -119,17 +203,26 @@ function Resume() {
               <br />
               <RenderSkills Skills={ResumeDetails.Skills.Breakout} />
               <br />
-              <MKTypography variant="h4" fontWeight="bold" textAlign="center">
+              <Typography
+                fontFamily="cambria"
+                variant="h4"
+                fontWeight="bold"
+                textAlign="center"
+              >
                 Education
-              </MKTypography>
+              </Typography>
               {ResumeDetails.Education.Degrees.map((degree) => (
                 <div>
-                  <MKTypography variant="h6" fontWeight="bold">
+                  <Typography
+                    fontFamily="cambria"
+                    variant="h6"
+                    fontWeight="bold"
+                  >
                     {degree[0]}
-                  </MKTypography>
-                  <MKTypography variant="body2" color="text">
+                  </Typography>
+                  <Typography fontFamily="cambria" variant="body2" color="text">
                     {degree[1]}
-                  </MKTypography>
+                  </Typography>
                 </div>
               ))}
             </Grid>

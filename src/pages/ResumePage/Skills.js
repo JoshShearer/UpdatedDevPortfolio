@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  AppBar,
-  Tabs,
-  Tab,
-  useTheme,
-} from "@mui/material";
-import MKTypography from "components/MKTypography";
-import MKBox from "components/MKBox";
+import { AppBar, Tabs, Tab, useTheme, ThemeProvider, Box, Typography } from "@mui/material";
 
 import SwipeableViews from "react-swipeable-views";
 import { Line } from "rc-progress";
@@ -22,32 +15,32 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <MKBox sx={{ p: 1 }}>
-          <MKTypography>{children}</MKTypography>
-        </MKBox>
+        <Box sx={{ p: 1 }}>
+          <Typography fontFamily="cambria">{children}</Typography>
+        </Box>
       )}
     </div>
   );
 }
 
 function CaptureSkills(Skills) {
-    if ('All' in Skills){
-        return Skills
-    }
-    const rawSkills = []
-    Object.keys(Skills).forEach((key) => {
-      return (rawSkills.push(...Skills[key]));
-    })
-    const All = {
-      All: [...rawSkills]
-    };
-    return (Object.assign(Skills, All))
+  if ("All" in Skills) {
+    return Skills;
   }
+  const rawSkills = [];
+  Object.keys(Skills).forEach((key) => {
+    return rawSkills.push(...Skills[key]);
+  });
+  const All = {
+    All: [...rawSkills],
+  };
+  return Object.assign(Skills, All);
+}
 
 const RenderSkills = (props) => {
-    const Skills = props.Skills
+  const Skills = props.Skills;
   const [value, setValue] = useState(0);
-  
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -60,27 +53,30 @@ const RenderSkills = (props) => {
 
   return (
     <div>
-      <MKTypography variant="h4" fontWeight="bold" textAlign="center">
+      <Typography fontFamily="cambria" variant="h4" fontWeight="bold" textAlign="center">
         Skills
-      </MKTypography>
+      </Typography>
       <br />
 
-      <AppBar position="static">
+      <AppBar position="sticky"  >
         <Tabs
           value={value}
           onChange={handleChange}
-          indicatorColor="secondary"
-          textColor="inherit"
-          variant="fullWidth"
+          centered
+          // indicatorColor="primary"
+          // textColor="inherit"
+          // variant="fullWidth"
           aria-label="full width tabs example"
           selectionFollowsFocus
-          sx={{ height: 50 }}
+          // variant="scrollable"
+          allowScrollButtonsMobile
+          // orientation="vertical"
+          // scrollButtons
+          sx={{ height: 60, fontFamily:'cambria', fontWeight:'bold', mx:'10', px:'10', '&:hover':{color:"#cccccc"}, background: 'white'}}
         >
-          {Object.keys(CaptureSkills(Skills)).map(
-            (skill, sKey) => {
-              return <Tab label={skill} key={sKey} />;
-            }
-          )}
+          {Object.keys(CaptureSkills(Skills)).map((skill, sKey) => {
+            return <Tab label={skill} key={sKey} sx={{mx:'10', px:'10',}} />;
+          })}
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -94,9 +90,9 @@ const RenderSkills = (props) => {
               {Skills[skills].map((skill, tabKey) => {
                 return (
                   <div>
-                    <MKTypography variant="h5" fontWeight="bold">
+                    <Typography fontFamily="cambria" variant="h5" fontWeight="bold" >
                       {skill[0]}
-                    </MKTypography>
+                    </Typography>
                     <Line
                       percent={skill[1]}
                       strokeWidth={3}
