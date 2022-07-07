@@ -28,7 +28,7 @@ export const ResumeDetails = {
         Title: "Blockchain Engineer",
         StartDate: "May 2022",
         EndDate: "Current",
-        Overview: "Consulted on a project building a DApp to service the influencer community.  Product included end-to-end encryption for piracy prevention, content hosting backend and front end for designed to add content and monetize products.",
+        Overview: "Consulted on a project building a DApp to service the influencer community.  Product included end-to-end encryption for piracy prevention, content hosting backend and front end designed to add content and monetize products.",
         Bullets: [
           "Reviewed overall architecture and advised on tools to manage and maintain product scaling",
           "Assisted in building the front end of the DApp"

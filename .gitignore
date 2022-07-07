@@ -26,4 +26,5 @@ package-lock.json
 .firebaserc
 .github/
 firebase.json
+# functions
 
