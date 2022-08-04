@@ -82,7 +82,7 @@ export const MyProjects = [
     keyLessons:
       "This project ended up being much more time consuming that expected.  It allowed me to really learn the power of tools like Pandas and Numpy for data processing and Bokeh and Matplot lib for visualizing the data.  Numpy and pandas are quite impressive for raw data processing.  The tools really make it easy to process very large, complicated datasets.",
     // demoLink: "http://react-traveldiary.web.app",
-    githubLink: "https://github.com/JoshShearer/CGMAnalysis",
+    githubLink: "https://github.com/JoshShearer/CGMSleepDietExercise",
     imageLink:
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.HJ2iPwhHfk6GfM5BWbfadAHaE8%26pid%3DApi&f=1",
   },

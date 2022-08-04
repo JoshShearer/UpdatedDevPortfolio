@@ -59,7 +59,7 @@ function LandingPage() {
               <br />
             </Grid>
           </Container>
-          <ProductSection />
+          {/* <ProductSection /> */}
           <WorkSection />
         </MKBox>
       </Card>
