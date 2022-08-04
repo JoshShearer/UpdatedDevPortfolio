@@ -56,7 +56,7 @@ function LandingPage() {
                 shopping, iPhone/Android app development (React), data analysis
                 and machine learning.
               </MKTypography>
-              <br />
+              {/* <br /> */}
             </Grid>
           </Container>
           {/* <ProductSection /> */}

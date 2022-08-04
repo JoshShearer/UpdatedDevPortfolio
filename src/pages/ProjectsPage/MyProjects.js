@@ -1,18 +1,18 @@
 export const MyProjects = [
-  {
-    id: 5,
-    title: "Web3 NFT Printer",
-    skills: "Web 3, Heroku, Blockchain, Redux/Rematch",
-    toolset: "Javscript, React, Nextjs, Typescript, Solidity, Truffle, Ganache",
-    notableLibraries: "Nextjs, Typescript, Redux/Rematch, Tailwindui, Headwindui, Solidity",
-    projectOverview: "This is built with a Nextjs/Typescript front-end.  It will pull in HD Account data via the metamask add-in in the browser.  The App will search known NFT's and allow user to print their own NFT.  Contracts are written in solidity.",
-    keyLessons:
-    "This project is was a great opportunity to learn modern front end build stacks and incorporate code reliability via typescript, in addition to getting great experience in using and writing web 3 contracts in solidity.  I found that Solidity has a great testing library that I was able to utilize in order to reduce contract bugs, making them more robust and reliable.",
-  demoLink: "https://NFTPrinter.herokuapp.com/",
-  githubLink: "https://github.com/JoshShearer/NFTPrinter",
-  imageLink:
-    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.SD4U_z9cdUdojYbVacP7IwHaE9%26pid%3DApi&f=1",
-  },
+  // {
+  //   id: 5,
+  //   title: "Web3 NFT Printer",
+  //   skills: "Web 3, Heroku, Blockchain, Redux/Rematch",
+  //   toolset: "Javscript, React, Nextjs, Typescript, Solidity, Truffle, Ganache",
+  //   notableLibraries: "Nextjs, Typescript, Redux/Rematch, Tailwindui, Headwindui, Solidity",
+  //   projectOverview: "This is built with a Nextjs/Typescript front-end.  It will pull in HD Account data via the metamask add-in in the browser.  The App will search known NFT's and allow user to print their own NFT.  Contracts are written in solidity.",
+  //   keyLessons:
+  //   "This project is was a great opportunity to learn modern front end build stacks and incorporate code reliability via typescript, in addition to getting great experience in using and writing web 3 contracts in solidity.  I found that Solidity has a great testing library that I was able to utilize in order to reduce contract bugs, making them more robust and reliable.",
+  // demoLink: "https://NFTPrinter.herokuapp.com/",
+  // githubLink: "https://github.com/JoshShearer/NFTPrinter",
+  // imageLink:
+  //   "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.SD4U_z9cdUdojYbVacP7IwHaE9%26pid%3DApi&f=1",
+  // },
     {
     id: 0,
     title: "Travel Diary",
