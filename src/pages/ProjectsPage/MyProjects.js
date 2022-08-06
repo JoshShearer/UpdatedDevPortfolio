@@ -25,7 +25,7 @@ export const MyProjects = [
     keyLessons:
       "This was a challenging and pivotal project.  It taught me about all the intricasies of the react front-end especially as it relates to state management.  Additionally, I learned what really goes into creating a backend for data storage and aquisition.",
     demoLink: "http://react-travel-diary.herokuapp.com",
-    githubLink: "https://github.com/JoshShearer/TravelDiary",
+    githubLink: "https://github.com/JoshShearer/NewTravelDiary",
     imageLink:
       "https://live.staticflickr.com/65535/48368684197_72fa4f2fef_k.jpg",
   },
