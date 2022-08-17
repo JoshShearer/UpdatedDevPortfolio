@@ -71,7 +71,7 @@ function Resume() {
                 fontWeight="light"
                 textAlign="center"
               >
-                Full Stack Blockchain Engineer
+                Full Stack Developer
               </Typography>
               <Typography fontFamily="cambria" textAlign="center">
                 <LocationOnIcon />

@@ -27,7 +27,7 @@ export const ResumeDetails = {
         Company: "Sols App",
         Title: "Blockchain Engineer",
         StartDate: "May 2022",
-        EndDate: "Current",
+        EndDate: "July 2022",
         Overview: "Consulted on a project building a DApp to service the influencer community.  Product included end-to-end encryption for piracy prevention, content hosting backend and front end designed to add content and monetize products.",
         Bullets: [
           "Reviewed overall architecture and advised on tools to manage and maintain product scaling",
@@ -110,7 +110,15 @@ export const ResumeDetails = {
         EndDate: "Feb 2012",
         Overview: "Intro to PLC programming",
         Bullets: ["Taught IC 230 - PLC Programming and Computer Interfacing, an introduction to programmable logic controllers. The twelve week course included a two hour lecture twice a week and a hands-on lab every other week. There were 14 students enrolled. This is the first quarter the course has been taught at the college, and required significant preparation. As an Adjunct Instructor tasks have included creating lecture plans, homework assignments, exams, and designing laboratory exercises."]
-    }
+    },
+    {
+      Company: "Schweizter Engineering Laboratories",
+      Title: "Software Engineering Intern",
+      StartDate: "April 2007",
+      EndDate: "Aug 2009",
+      Overview: "Software Testing",
+      Bullets: ["Software testing and development via perl scripting for Power Safety Devices"]
+  }
     ],
   },
   "Skills":

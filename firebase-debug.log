@@ -1,0 +1,36 @@
+[debug] [2022-08-17T17:34:01.454Z] ----------------------------------------------------------------------
+[debug] [2022-08-17T17:34:01.456Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\shear\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-08-17T17:34:01.456Z] CLI Version:   11.7.0
+[debug] [2022-08-17T17:34:01.456Z] Platform:      win32
+[debug] [2022-08-17T17:34:01.456Z] Node Version:  v16.14.0
+[debug] [2022-08-17T17:34:01.457Z] Time:          Wed Aug 17 2022 10:34:01 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-08-17T17:34:01.458Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-17T17:34:01.461Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-08-17T17:34:01.558Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-17T17:34:01.559Z] > authorizing via signed-in user (joshshear@gmail.com)
+[debug] [2022-08-17T17:34:01.559Z] [iam] checking project mydevpage for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-08-17T17:34:01.561Z] > refreshing access token with scopes: []
+[debug] [2022-08-17T17:34:01.562Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-08-17T17:34:01.562Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-08-17T17:34:01.692Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-08-17T17:34:01.692Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-08-17T17:34:01.701Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mydevpage:testIamPermissions [none]
+[debug] [2022-08-17T17:34:01.701Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mydevpage:testIamPermissions x-goog-quota-user=projects/mydevpage
+[debug] [2022-08-17T17:34:01.701Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mydevpage:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-17T17:34:01.705Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-08-17T17:34:01.705Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-08-17T17:34:01.833Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mydevpage:testIamPermissions 200
+[debug] [2022-08-17T17:34:01.833Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mydevpage:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-17T17:34:01.834Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/mydevpage/serviceAccounts/mydevpage@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2022-08-17T17:34:01.834Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/mydevpage/serviceAccounts/mydevpage@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-08-17T17:34:01.969Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/mydevpage/serviceAccounts/mydevpage@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2022-08-17T17:34:01.969Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/mydevpage/serviceAccounts/mydevpage@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-08-17T17:34:01.971Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mydevpage [none]
+[debug] [2022-08-17T17:34:02.157Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mydevpage 200
+[debug] [2022-08-17T17:34:02.157Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mydevpage {"projectId":"mydevpage","projectNumber":"384536065826","displayName":"MyDevPage","name":"projects/mydevpage","resources":{"hostingSite":"mydevpage","realtimeDatabaseInstance":"mydevpage"},"state":"ACTIVE","etag":"1_d8808cb9-9648-457a-bb91-c8f008922783"}
+[info] 
+[info] === Deploying to 'mydevpage'...
+[info] 
+[info] i  deploying functions, hosting 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
