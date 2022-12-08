@@ -147,7 +147,7 @@ export const myTabs = [
           Technology: "React Web Deveopment",
           Project:"Travel Diary, Web 3 Token Exchange"
         },
-        src: "https://www.mindinventory.com/blog/wp-content/uploads/2017/08/reactjs.jpg"
+        src: "https://imgs.search.brave.com/tJaSWmjChzy4dMG1HpvUC0h3HaAa-lDyYCYa9syzBMk/rs:fit:1012:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC42/bHFRdmZhbG9uQk00/LWdUMElJakh3SGFE/ZSZwaWQ9QXBp"
       },
       {
         alt: "...",

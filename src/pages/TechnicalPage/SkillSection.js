@@ -18,7 +18,7 @@ const Image = styled.img`
 `;
 
 const skillImages = [
-  ["React","https://www.mindinventory.com/blog/wp-content/uploads/2017/08/reactjs.jpg"],
+  ["React","https://imgs.search.brave.com/tJaSWmjChzy4dMG1HpvUC0h3HaAa-lDyYCYa9syzBMk/rs:fit:1012:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC42/bHFRdmZhbG9uQk00/LWdUMElJakh3SGFE/ZSZwaWQ9QXBp"],
   ["ReactN","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.mm8JucFufPWr2ls_I1h_0wHaDt%26pid%3DApi&f=1"],
   ["Nextjs","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.IbzKrKUVsfSH_UJxSX53EQHaEK%26pid%3DApi&f=1"],
   ["Typescript","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.SSo_VpLEJ49WTi_ubpTVGQHaDa%26pid%3DApi&f=1"],
@@ -27,8 +27,9 @@ const skillImages = [
   ["Rematch","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.dIHwMZlm5PfZBTWfsQp_PgHaEA%26pid%3DApi&f=1"],
 
   ["CSS","https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/90562701/original/2efb936eb6ad65c1257e56f9ff1c16ab104bbf8d/fix-any-html-css-javascript-errors-website-bugs-or-issues.png"],
-  ["Tailwindui","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.C2pQVFQywHnv6whsimADlgHaEo%26pid%3DApi&f=1"],
+  ["TailwindUI","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.C2pQVFQywHnv6whsimADlgHaEo%26pid%3DApi&f=1"],
   ["MaterialUI @MUI","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._mdpsmNUZ05vQb-q09t3jAHaDc%26pid%3DApi&f=1"],
+  ["Node Red", "https://imgs.search.brave.com/LeDSdefSum6nhs1Em53dinQRHfuh-itCRQ7HLgZe1Oo/rs:fit:895:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5v/Yk04ZGozRUJnajBQ/OVUzOFlKY0V3SGFE/NyZwaWQ9QXBp"],
 
   ["MongoDB","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.qQwwv7aYYcjY1q42pOzPFwHaEL%26pid%3DApi&f=1"],
   ["SQL","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.srRWCNh2uhYtVQ0RcZXfpwHaD7%26pid%3DApi&f=1"],

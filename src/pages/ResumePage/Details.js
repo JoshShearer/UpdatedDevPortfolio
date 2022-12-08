@@ -13,6 +13,22 @@ export const ResumeDetails = {
     title: "Experience",
     jobs: [
       {
+        Company: "Nyborg Systems",
+        Title: "Lead Full Stack Developer",
+        StartDate: "Sept 2022",
+        EndDate: "Current",
+        Overview: "Bringing the power of automation and control to the masses",
+        Bullets: [
+          "Building a configurable front end dashboard delivered to iOS and Android devices to provide an Automation as a Service platform",
+          "Custom Modular Backend utilizing a low code solution built on Node-Red to facilitate component communication and data management as well as the API to deliver data to the front end",
+          "Managing Full Stack Development and Architecture of the product",
+          "Enjoying the startup environment and the ability to learn and develop new skills in a fast paced environment",
+          "iOS/Android App development via React-Native",
+          "Node-Red Development providing a communication and api layer for the controller interface to instruments, sensors, and devices",
+          "Developing a process controller to provide a cost effective solution to the market.  Analog/Digital communication, PID control, and data logging",
+        ]
+      },
+      {
         Company: "RoboBrowser",
         Title: "Full Stack Consultant",
         StartDate: "Jan 2022",
@@ -129,7 +145,7 @@ export const ResumeDetails = {
       "Java Script": [
         ["JavaScript", 90, "#3366FF"],
         ["React", 90, "#3366FF"],
-        ["ReactN", 30, "#3366FF"],
+        ["ReactNative", 75, "#3366FF"],
         ["Nextjs", 75, "#3366FF"],
         ["Typescript", 70, "#3366FF"],
       ],
@@ -139,7 +155,7 @@ export const ResumeDetails = {
       ],
       Styling: [
         ["CSS", 70, "#669966"],
-        ["Tailwindui", 90, "#669966"],
+        ["TailwindUI", 90, "#669966"],
         ["MaterialUI", 60, "#669966"],
       ],
       "Data Base": [
@@ -147,7 +163,8 @@ export const ResumeDetails = {
         ["SQL", 50, "#CCCCCC"],
       ],
       Backend: [
-        ["NodeJS", 55, "#993300"],
+        ["NodeJS", 65, "#993300"],
+        ["NodeRed", 80, "#993300"],
         ["Express", 55, "#993300"],
         ["JavaScript", 90, "#993300"],
       ],

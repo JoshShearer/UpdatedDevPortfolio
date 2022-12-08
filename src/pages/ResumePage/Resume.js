@@ -71,11 +71,11 @@ function Resume() {
                 fontWeight="light"
                 textAlign="center"
               >
-                Full Stack Developer
+                Lead Full Stack Developer
               </Typography>
               <Typography fontFamily="cambria" textAlign="center">
                 <LocationOnIcon />
-                Seattle, WA
+                Austin, TX
               </Typography>
               <br />
               <Typography fontFamily="cambria" variant="h4" fontWeight="light">
@@ -83,7 +83,7 @@ function Resume() {
               </Typography>
               <Typography fontFamily="cambria" variant="h4" fontWeight="light">
                 <a href="mailto:ShearerJosh@hotmail.com">
-                  SheareJosh@hotmail.com
+                  ShearerJosh@hotmail.com
                 </a>
               </Typography>
               <Tooltip

@@ -52,7 +52,7 @@ function TechnicalPage() {
               </MKTypography>
               <MKTypography variant="body1" color="text">
                 My interests have led me to study and work on Machine Learning
-                applications with Python among other things.
+                applications with Python, Front-End Web Development with React, Back-End Web Development with Node.js, MongoDB, and Express, and iOS/Android Mobile Development with React Native. I am currently working on a project bring automation and control to the masses via Automation As A Service (AaaS) for financially constrained manufacturing applications.
               </MKTypography>
             </Grid>
             <SkillSection />
