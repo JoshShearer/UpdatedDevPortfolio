@@ -1,6 +1,20 @@
 export const MyProjects = [
-    {
+  {
     id: 0,
+    title: "LoopString",
+    skills:
+      "Scrum, Design Patters, React State Management, Full Stack Web Developement, Authorization, CSS",
+    toolset: "JavaScript, React, Vite, Firebase, React-Native",
+    notableLibraries: "TailwindCSS, Redux, Node-Red, Firebase, ",
+    projectOverview: "",
+    keyLessons:
+      "This is an ongoing company that I am building from scratch.  I am currently the sole developer and have been working on it for about 6 months.  I have learned a lot about the process of building a company and the challenges that come with it.  I have also learned a lot about team building, leadership, networking, and communication.  The LoopString Platform is providing automation as a service to help small and medium businesses automate their business processes.  The platform is built on a microservice architecture and is designed to be highly scalable and secure.  LoopString is currently in beta and is being used by several businesses.",
+    demoLink: "http://loopstring.io",
+    githubLink: "https://github.com/LoopString-IO",
+    imageLink: "https://imgs.search.brave.com/Tr1TmgeM9O8dGCxsOdbkDurh4IZmewZnSBV9SNJk5Fw/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5W/REpzVDhoNi16WlN3/SUU5M1VJaUlBSGFF/OCZwaWQ9QXBp",
+  },  
+  {
+    id: 1,
     title: "Travel Diary",
     skills:
       "Scrum, Design Patterns, React State Management, Full Stack Web Development, CSS",
@@ -16,7 +30,7 @@ export const MyProjects = [
       "https://live.staticflickr.com/65535/48368684197_72fa4f2fef_k.jpg",
   },
   {
-    id: 1,
+    id: 2,
     title: "Web3 Token Exchange",
     skills: "Web 3, Heroku, Blockchain, Redux/Rematch",
     toolset: "Javscript, React, Nextjs, Typescript, Solidity, Truffle, Ganache",
@@ -30,7 +44,7 @@ export const MyProjects = [
       "https://bitcoinexchangeguide.com/wp-content/uploads/2019/03/Delving-into-Blockchain-as-the-Origin-Point-for-the-new-Generation-of-dApps-on-Web-3-0.jpg",
   },
   {
-    id: 2,
+    id: 3,
     title: "Automated Brew Station",
     skills:
       "Beer Making, Procurement, Fabrication, Soldering, Electrical Design, Automation",
@@ -44,7 +58,7 @@ export const MyProjects = [
     imageLink: "https://up.picr.de/39892247gq.jpeg",
   },
   {
-    id: 3,
+    id: 4,
     title: "Nutrition Macro Transfer",
     skills:
       "WebScraping, Automated Data Aquisition and Entry",
@@ -59,7 +73,7 @@ export const MyProjects = [
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.v_lPMNggFGsYMVp_8tR8iAHaHo%26pid%3DApi&f=1",
   },
   {
-    id: 4,
+    id: 5,
     title: "Glucose Monitoring",
     skills: "WebScraping, Data Entry Automation",
     toolset: "Python, Numpy, Pandas, matplotlib, Bokeh ",
@@ -71,19 +85,5 @@ export const MyProjects = [
     githubLink: "https://github.com/JoshShearer/CGMSleepDietExercise",
     imageLink:
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.HJ2iPwhHfk6GfM5BWbfadAHaE8%26pid%3DApi&f=1",
-  },
-  {
-    id: 5,
-    title: "LoopString",
-    skills:
-      "Scrum, Design Patters, React State Management, Full Stack Web Developement, Authorization, CSS",
-    toolset: "JavaScript, React, Vite, Firebase, React-Native",
-    notableLibraries: "TailwindCSS, Redux, Node-Red, Firebase, ",
-    projectOverview: "",
-    keyLessons:
-      "This is an ongoing company that I am building from scratch.  I am currently the sole developer and have been working on it for about 6 months.  I have learned a lot about the process of building a company and the challenges that come with it.  I have also learned a lot about team building, leadership, networking, and communication.  The LoopString Platform is providing automation as a service to help small and medium businesses automate their business processes.  The platform is built on a microservice architecture and is designed to be highly scalable and secure.  LoopString is currently in beta and is being used by several businesses.",
-    demoLink: "http://loopstring.io",
-    githubLink: "https://github.com/LoopString-IO",
-    imageLink: "https://imgs.search.brave.com/Tr1TmgeM9O8dGCxsOdbkDurh4IZmewZnSBV9SNJk5Fw/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5W/REpzVDhoNi16WlN3/SUU5M1VJaUlBSGFF/OCZwaWQ9QXBp",
   },
 ];
