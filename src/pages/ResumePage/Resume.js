@@ -77,6 +77,14 @@ function Resume() {
                   fontWeight="light"
                   textAlign="center"
                 >
+                  Founder
+                </MKTypography>
+                <MKTypography
+                  fontFamily="cambria"
+                  variant="h4"
+                  fontWeight="light"
+                  textAlign="center"
+                >
                   Lead Full Stack Developer
                 </MKTypography>
                 <MKTypography fontFamily="cambria" textAlign="center">

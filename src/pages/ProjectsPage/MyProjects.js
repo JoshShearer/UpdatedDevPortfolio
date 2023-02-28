@@ -1,18 +1,4 @@
 export const MyProjects = [
-  // {
-  //   id: 5,
-  //   title: "Web3 NFT Printer",
-  //   skills: "Web 3, Heroku, Blockchain, Redux/Rematch",
-  //   toolset: "Javscript, React, Nextjs, Typescript, Solidity, Truffle, Ganache",
-  //   notableLibraries: "Nextjs, Typescript, Redux/Rematch, Tailwindui, Headwindui, Solidity",
-  //   projectOverview: "This is built with a Nextjs/Typescript front-end.  It will pull in HD Account data via the metamask add-in in the browser.  The App will search known NFT's and allow user to print their own NFT.  Contracts are written in solidity.",
-  //   keyLessons:
-  //   "This project is was a great opportunity to learn modern front end build stacks and incorporate code reliability via typescript, in addition to getting great experience in using and writing web 3 contracts in solidity.  I found that Solidity has a great testing library that I was able to utilize in order to reduce contract bugs, making them more robust and reliable.",
-  // demoLink: "https://NFTPrinter.herokuapp.com/",
-  // githubLink: "https://github.com/JoshShearer/NFTPrinter",
-  // imageLink:
-  //   "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.SD4U_z9cdUdojYbVacP7IwHaE9%26pid%3DApi&f=1",
-  // },
     {
     id: 0,
     title: "Travel Diary",
@@ -86,18 +72,18 @@ export const MyProjects = [
     imageLink:
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.HJ2iPwhHfk6GfM5BWbfadAHaE8%26pid%3DApi&f=1",
   },
-  // {
-  //   id: 5,
-  //   title: "Image Recognition",
-  //   skills:
-  //     "Scrum, Design Patters, React State Management, Full Stack Web Developement, Authorization, CSS",
-  //   toolset: "Python, TensorFlow",
-  //   notableLibraries: "Material UI",
-  //   projectOverview: "",
-  //   keyLessons:
-  //     "This was a challenging and pivotal project.  It taught me about all the intricasies of the react front-end especially as it relates to state management",
-  //   demoLink: "http://react-traveldiary.web.app",
-  //   githubLink: "https://github.com/JoshShearer",
-  //   imageLink: "https://www.talkwalker.com/images/blog/image-recognition.png",
-  // },
+  {
+    id: 5,
+    title: "LoopString",
+    skills:
+      "Scrum, Design Patters, React State Management, Full Stack Web Developement, Authorization, CSS",
+    toolset: "JavaScript, React, Vite, Firebase, React-Native",
+    notableLibraries: "TailwindCSS, Redux, Node-Red, Firebase, ",
+    projectOverview: "",
+    keyLessons:
+      "This is an ongoing company that I am building from scratch.  I am currently the sole developer and have been working on it for about 6 months.  I have learned a lot about the process of building a company and the challenges that come with it.  I have also learned a lot about team building, leadership, networking, and communication.  The LoopString Platform is providing automation as a service to help small and medium businesses automate their business processes.  The platform is built on a microservice architecture and is designed to be highly scalable and secure.  LoopString is currently in beta and is being used by several businesses.",
+    demoLink: "http://loopstring.io",
+    githubLink: "https://github.com/LoopString-IO",
+    imageLink: "https://imgs.search.brave.com/Tr1TmgeM9O8dGCxsOdbkDurh4IZmewZnSBV9SNJk5Fw/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5W/REpzVDhoNi16WlN3/SUU5M1VJaUlBSGFF/OCZwaWQ9QXBp",
+  },
 ];

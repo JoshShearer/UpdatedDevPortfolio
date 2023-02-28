@@ -13,11 +13,26 @@ export const ResumeDetails = {
     title: "Experience",
     jobs: [
       {
+        Company: "LoopString",
+        Title: "Founder, Head of Technology",
+        StartDate: "Jan 2022",
+        EndDate: "Current",
+        Overview: "Bringing the power of automation and control to the masses",
+        Bullets: [
+          "Building a configurable front end dashboard delivered to iOS and Android devices as well as a webapp to provide an Automation as a Service platform",
+          "Building an executive team to build out an automation as a service platform",
+          "Actively seeking funding to build out the team and product",
+          "iOS/Android App development via React-Native",
+          "Built successful MVP for product Launch",
+          "Building Development team for further product build out",
+        ]
+      },
+      {
         Company: "Nyborg Systems",
         Title: "Lead Full Stack Developer",
         StartDate: "Sept 2022",
         EndDate: "Current",
-        Overview: "Bringing the power of automation and control to the masses",
+        Overview: "Web Devolopment and Automation with React, React-Native, Node-Red, and NodeJS",
         Bullets: [
           "Building a configurable front end dashboard delivered to iOS and Android devices to provide an Automation as a Service platform",
           "Custom Modular Backend utilizing a low code solution built on Node-Red to facilitate component communication and data management as well as the API to deliver data to the front end",
