@@ -3,7 +3,7 @@ export const MyProjects = [
     id: 0,
     title: "LoopString",
     skills:
-      "Scrum, Design Patters, React State Management, Full Stack Web Developement, Authorization, CSS",
+      "Scrum, Design Patters, React State Management, Full Stack Web Development, Authorization, CSS",
     toolset: "JavaScript, React, Vite, Firebase, React-Native",
     notableLibraries: "TailwindCSS, Redux, Node-Red, Firebase, ",
     projectOverview: "",
