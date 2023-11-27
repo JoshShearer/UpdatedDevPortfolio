@@ -1,21 +1,50 @@
 export const ResumeDetails = {
-  "Education": 
-  {
+  Education: {
     id: 0,
     title: "Education",
     Degrees: [
       ["B.S. Electrical Engineering", "Washington State University, 2009"],
-      ["Associate of Arts", "Peninsula Community College, 2002"]],
+      ["Associate of Arts", "Peninsula Community College, 2002"],
+    ],
   },
-  "Experience":
-  {
-    id: 1,  
+  Experience: {
+    id: 1,
     title: "Experience",
     jobs: [
       {
+        Company: "ShroomSpy",
+        Title: "Founder, Head of Technology",
+        StartDate: "May 2023",
+        EndDate: "Current",
+        Overview:
+          "ShroomSpy: Uniting and educating the world on the diverse wonders of mushrooms.",
+        Bullets: [
+          "Strategic Leadership: Spearheaded ShroomSpy's technology vision, aligning it with business goals.",
+          "Tech Stack Development: Developed and managed a diverse tech stack (Headless CMS, MongoDB, ML, etc.).",
+          "Team Building & Management: Led a dynamic team of tech professionals.",
+          "Product Development: Managed the ShroomSpy Mushroom Marketplace from concept to deployment.",
+          "Research & Innovation: Stayed ahead of tech trends to drive business solutions.",
+          "Stakeholder Engagement: Collaborated with clients and teams, aligning tech with market needs.",
+          "Launched ShroomSpy.com, democratizing access to mushroom data.",
+          "Enhanced operational efficiency through tech upgrades and automation.",
+          "Full-Stack Development, technology automation, and integration.",
+          "Proficient in cloud computing (Firebase, Mongo Atlas).",
+          "Strong in machine learning, big data, headless CMS, and cutting-edge tech integration.",
+          "Excellent leadership and agile project management skills.",
+          "Advanced Server-Side Rendering (SSR): Demonstrated expertise in implementing server-side rendering techniques using JavaScript frameworks. Proficient in enhancing web application performance and SEO optimization through efficient SSR strategies.",
+          "JavaScript Frameworks: Proficient in using popular JavaScript frameworks and libraries like React Vite, NodeJs, and ExpressJs to create dynamic, server-rendered web applications. Skilled in building robust, scalable, and maintainable server-side applications.",
+          "MongoDB Integration: Deep understanding of integrating MongoDB, a leading NoSQL database, with server-side applications. Expertise in designing and managing database schemas, optimizing queries, and ensuring data integrity in MongoDB.",
+          "Performance Optimization: Strong focus on optimizing application performance, reducing server response times, and enhancing user experience. Experience in leveraging caching, efficient data retrieval, and load balancing in SSR environments.",
+          "Cross-functional Collaboration: Proven ability in collaborating with front-end developers and database administrators to ensure seamless integration of server-side rendering with client-side functionalities and database operations.",
+          "Modern Development Practices: Committed to following best practices in software development, including code modularization, version control with Git, and continuous integration/continuous deployment (CI/CD) pipelines.",
+          "Agile Methodologies: Proficient in agile methodologies, including Scrum and Kanban, to ensure efficient project management and timely delivery of high-quality products.",
+          "Proficient in PayloadCMS: Expertly leveraged PayloadCMS, a powerful headless CMS, to deliver dynamic and scalable content solutions, enhancing content flexibility and integration capabilities in web applications."
+        ],
+      },
+      {
         Company: "LoopString",
         Title: "Founder, Head of Technology",
-        StartDate: "Jan 2022",
+        StartDate: "Jan 2023",
         EndDate: "Current",
         Overview: "Bringing the power of automation and control to the masses",
         Bullets: [
@@ -25,14 +54,16 @@ export const ResumeDetails = {
           "iOS/Android App development via React-Native",
           "Built successful MVP for product Launch",
           "Building Development team for further product build out",
-        ]
+          "Launched loopstring.io, and and the webapp app.loopstring.io",
+        ],
       },
       {
         Company: "Nyborg Systems",
         Title: "Lead Full Stack Developer",
         StartDate: "Sept 2022",
-        EndDate: "Current",
-        Overview: "Web Devolopment and Automation with React, React-Native, Node-Red, and NodeJS",
+        EndDate: "Feb 2023",
+        Overview:
+          "Web Devolopment and Automation with React, React-Native, Node-Red, and NodeJS",
         Bullets: [
           "Building a configurable front end dashboard delivered to iOS and Android devices to provide an Automation as a Service platform",
           "Custom Modular Backend utilizing a low code solution built on Node-Red to facilitate component communication and data management as well as the API to deliver data to the front end",
@@ -41,7 +72,7 @@ export const ResumeDetails = {
           "iOS/Android App development via React-Native",
           "Node-Red Development providing a communication and api layer for the controller interface to instruments, sensors, and devices",
           "Developing a process controller to provide a cost effective solution to the market.  Analog/Digital communication, PID control, and data logging",
-        ]
+        ],
       },
       {
         Company: "RoboBrowser",
@@ -52,18 +83,19 @@ export const ResumeDetails = {
         Bullets: [
           "Worked with NodeJS to provide cross platform environment compatibility across app",
           "Assisted in product updates for more reliable tooling associated with current industry standards",
-        ]
+        ],
       },
       {
         Company: "Sols App",
         Title: "Blockchain Engineer",
         StartDate: "May 2022",
         EndDate: "July 2022",
-        Overview: "Consulted on a project building a DApp to service the influencer community.  Product included end-to-end encryption for piracy prevention, content hosting backend and front end designed to add content and monetize products.",
+        Overview:
+          "Consulted on a project building a DApp to service the influencer community.  Product included end-to-end encryption for piracy prevention, content hosting backend and front end designed to add content and monetize products.",
         Bullets: [
           "Reviewed overall architecture and advised on tools to manage and maintain product scaling",
-          "Assisted in building the front end of the DApp"
-        ]
+          "Assisted in building the front end of the DApp",
+        ],
       },
       {
         Company: "Learning Systems",
@@ -73,20 +105,21 @@ export const ResumeDetails = {
         Overview: "Applying Machine Learning for small business growth",
         Bullets: [
           "Worked with small business customers to strategize monetizing and improving service and delivery of products/services",
-          "Educated customers on products and tools to more effectively serve client needs"
-        ]
+          "Educated customers on products and tools to more effectively serve client needs",
+        ],
       },
       {
         Company: "Florianopolis English",
         Title: "Language Emersion and EASL Instructor",
         StartDate: "Feb 2019",
         EndDate: "July 2019",
-        Overview: "English as a second language teacher, and Brazilian Portuguese Immersion",
+        Overview:
+          "English as a second language teacher, and Brazilian Portuguese Immersion",
         Bullets: [
           "Worked through language barriers to teach core English language skills",
-          "Intro to Advanced Tutoring sessions provided", 
-          "Basic to Intermediate Brazilian Portuguese Language Immersion"
-        ]
+          "Intro to Advanced Tutoring sessions provided",
+          "Basic to Intermediate Brazilian Portuguese Language Immersion",
+        ],
       },
       {
         Company: "Journey South",
@@ -95,44 +128,46 @@ export const ResumeDetails = {
         EndDate: "Aug 2019",
         Overview: "Portland to Patagonia to Brasil by Motorcycle",
         Bullets: [
-            "Spanish Language Immersion",
-            "Portuguese Language Immersion",
-            "Embassador to the US"
-        ]
+          "Spanish Language Immersion",
+          "Portuguese Language Immersion",
+          "Embassador to the US",
+        ],
       },
       {
         Company: "Valin Corp",
         Title: "Sales Engineer/Account Manager",
         StartDate: "June 2012",
         EndDate: "Feb 2018",
-        Overview: " Provide engineering and technical support to over 40 accounts by working with customers to solve problems in the following areas: fluid handling, process management, filtration, measurement systems, automation and control, and process heating. Other tasks include startup and commissioning of control systems, project management, design assistance for large projects, contractor training, project takeoffs, and new business development.",
-        Bullets: [            
-            "(2016-2017) Sales performance characterized by double digit margin growth",
-            "250% Sales Growth (2017), 6-8% Overall GM Growth year over year, two consecutive years in a row", 
-            "Grew into $4 million account base",
-            "Won/Managed several $1 Million + Projects",
-            "Was able to utilize extensive technical experience and expertise to cold call my way to $1.5 million sale on single project.",
-            "Grew an internal engineering team of 3 employees to support sales development and large project design support for thermal solution sales.",
-            "Launched an internal project management group to manage large scale project wins. Team oversight includes order and delivery management to meet customer needs, communication with internal credit department to assure a good customer experience and coordinating project deliverables and milestones with the engineering group.",
-            "(2012 – 2015) Exceptional sales performance in a declining semiconductor market", 
-            "Managed $2 million account base",
-            "10% - 20% growth year over year. Accounts were largely project driven.", 
-            "Grew top 3 accounts from less than $10,000 to over $200,000 in a single year by leveraging engineering skills and product knowledge.", 
-            "Won and managed multiple ~$500,000 sales. Developed lasting relationships and leveraged outstanding performance with customer to create partnership that achieved additional $150,000 sale and substantial future business.", 
-            "Maintained margin growth on all large (high dollar) projects."
-        ]
+        Overview:
+          " Provide engineering and technical support to over 40 accounts by working with customers to solve problems in the following areas: fluid handling, process management, filtration, measurement systems, automation and control, and process heating. Other tasks include startup and commissioning of control systems, project management, design assistance for large projects, contractor training, project takeoffs, and new business development.",
+        Bullets: [
+          "(2016-2017) Sales performance characterized by double digit margin growth",
+          "250% Sales Growth (2017), 6-8% Overall GM Growth year over year, two consecutive years in a row",
+          "Grew into $4 million account base",
+          "Won/Managed several $1 Million + Projects",
+          "Was able to utilize extensive technical experience and expertise to cold call my way to $1.5 million sale on single project.",
+          "Grew an internal engineering team of 3 employees to support sales development and large project design support for thermal solution sales.",
+          "Launched an internal project management group to manage large scale project wins. Team oversight includes order and delivery management to meet customer needs, communication with internal credit department to assure a good customer experience and coordinating project deliverables and milestones with the engineering group.",
+          "(2012 – 2015) Exceptional sales performance in a declining semiconductor market",
+          "Managed $2 million account base",
+          "10% - 20% growth year over year. Accounts were largely project driven.",
+          "Grew top 3 accounts from less than $10,000 to over $200,000 in a single year by leveraging engineering skills and product knowledge.",
+          "Won and managed multiple ~$500,000 sales. Developed lasting relationships and leveraged outstanding performance with customer to create partnership that achieved additional $150,000 sale and substantial future business.",
+          "Maintained margin growth on all large (high dollar) projects.",
+        ],
       },
       {
         Company: "Ares Corp",
         Title: "Electrical/Controls Engineer",
         StartDate: "June 2010",
         EndDate: "June 2012",
-        Overview: "Electrical and Control Systems Engineering, Design and Consultation Services",
+        Overview:
+          "Electrical and Control Systems Engineering, Design and Consultation Services",
         Bullets: [
-            "I&C Engineer for WESF K1/K3 Exhauster Upgrade Project. Project scope included upgrading/replacing a portion of the Hanford WESF facility control system, filter trains, stack, and stack monitor. Tasks included developing P&ID’s, instrument selection, and control system design. Documentation included procurement specification for the control system as well as the stack monitor.",
-            "I&C Engineer for 100-D Bioremediation Project. The project included four wells and a bioremediation filtration station. Tasks included control system process design and P&ID development. Selected instruments and developed system elementary drawings. Programmed PLC system with Siemens S7 development software. Language used was primarily ladder logic with some STL. Programmed HMI using Siemens WinCC development Suite. Created control system support documentation including Sequence of Operations, system requirements documentation and operator user manual.",
-            "I&C Engineer for Alpha Caisson Waste Retrieval Project (ACWRP). The project consisted of designing a fully automated shielded waste retrieval center. Tasks included facility process design. Design included proximity switches, radiation monitors, radiation hardened cameras, limit switches, and motor controllers. Significantly contributed to P&ID development."
-        ]
+          "I&C Engineer for WESF K1/K3 Exhauster Upgrade Project. Project scope included upgrading/replacing a portion of the Hanford WESF facility control system, filter trains, stack, and stack monitor. Tasks included developing P&ID’s, instrument selection, and control system design. Documentation included procurement specification for the control system as well as the stack monitor.",
+          "I&C Engineer for 100-D Bioremediation Project. The project included four wells and a bioremediation filtration station. Tasks included control system process design and P&ID development. Selected instruments and developed system elementary drawings. Programmed PLC system with Siemens S7 development software. Language used was primarily ladder logic with some STL. Programmed HMI using Siemens WinCC development Suite. Created control system support documentation including Sequence of Operations, system requirements documentation and operator user manual.",
+          "I&C Engineer for Alpha Caisson Waste Retrieval Project (ACWRP). The project consisted of designing a fully automated shielded waste retrieval center. Tasks included facility process design. Design included proximity switches, radiation monitors, radiation hardened cameras, limit switches, and motor controllers. Significantly contributed to P&ID development.",
+        ],
       },
       {
         Company: "Columbia Community College",
@@ -140,20 +175,23 @@ export const ResumeDetails = {
         StartDate: "June 2011",
         EndDate: "Feb 2012",
         Overview: "Intro to PLC programming",
-        Bullets: ["Taught IC 230 - PLC Programming and Computer Interfacing, an introduction to programmable logic controllers. The twelve week course included a two hour lecture twice a week and a hands-on lab every other week. There were 14 students enrolled. This is the first quarter the course has been taught at the college, and required significant preparation. As an Adjunct Instructor tasks have included creating lecture plans, homework assignments, exams, and designing laboratory exercises."]
-    },
-    {
-      Company: "Schweizter Engineering Laboratories",
-      Title: "Software Engineering Intern",
-      StartDate: "April 2007",
-      EndDate: "Aug 2009",
-      Overview: "Software Testing",
-      Bullets: ["Software testing and development via perl scripting for Power Safety Devices"]
-  }
+        Bullets: [
+          "Taught IC 230 - PLC Programming and Computer Interfacing, an introduction to programmable logic controllers. The twelve week course included a two hour lecture twice a week and a hands-on lab every other week. There were 14 students enrolled. This is the first quarter the course has been taught at the college, and required significant preparation. As an Adjunct Instructor tasks have included creating lecture plans, homework assignments, exams, and designing laboratory exercises.",
+        ],
+      },
+      {
+        Company: "Schweizter Engineering Laboratories",
+        Title: "Software Engineering Intern",
+        StartDate: "April 2007",
+        EndDate: "Aug 2009",
+        Overview: "Software Testing",
+        Bullets: [
+          "Software testing and development via perl scripting for Power Safety Devices",
+        ],
+      },
     ],
   },
-  "Skills":
-  {
+  Skills: {
     id: 2,
     title: "Skills",
     Breakout: {
@@ -163,6 +201,8 @@ export const ResumeDetails = {
         ["ReactNative", 75, "#3366FF"],
         ["Nextjs", 75, "#3366FF"],
         ["Typescript", 70, "#3366FF"],
+        ["Vite", 80, "#3366FF"],
+        ["Server Side Rendering", 80, "#3366FF"],
       ],
       "State Management": [
         ["Redux", 70, "#669999"],
@@ -174,14 +214,14 @@ export const ResumeDetails = {
         ["MaterialUI", 60, "#669966"],
       ],
       "Data Base": [
-        ["MongoDB", 50, "#CCCCCC"],
+        ["MongoDB", 70, "#CCCCCC"],
         ["SQL", 50, "#CCCCCC"],
+        ["Firebase", 80, "#CCCCCC"],
       ],
       Backend: [
         ["NodeJS", 65, "#993300"],
         ["NodeRed", 80, "#993300"],
         ["Express", 55, "#993300"],
-        ["JavaScript", 90, "#993300"],
       ],
       Tools: [
         ["FireBase", 60, "#66cc99"],
@@ -212,5 +252,5 @@ export const ResumeDetails = {
         ["Sales and Customer Interaction", 100, "#00FF99"],
       ],
     },
-  }
-}
+  },
+};

@@ -19,6 +19,10 @@ const Image = styled.img`
 
 const skillImages = [
   ["React","https://imgs.search.brave.com/tJaSWmjChzy4dMG1HpvUC0h3HaAa-lDyYCYa9syzBMk/rs:fit:1012:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC42/bHFRdmZhbG9uQk00/LWdUMElJakh3SGFE/ZSZwaWQ9QXBp"],
+  ["Vite", "https://vitejs.dev/og-image-announcing-vite5.png"],
+  ["Vike", "https://vike.dev/banner.png"],
+  ["SSR", "https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1616915263/patterns.dev/serverSideRendering.png"],
+  ["PayloadCMS", "https://watch-learn.com/backend/assets/caa4814c-e297-43f2-bbbe-52e27c63b879"],
   ["ReactN","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.mm8JucFufPWr2ls_I1h_0wHaDt%26pid%3DApi&f=1"],
   ["Nextjs","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.IbzKrKUVsfSH_UJxSX53EQHaEK%26pid%3DApi&f=1"],
   ["Typescript","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.SSo_VpLEJ49WTi_ubpTVGQHaDa%26pid%3DApi&f=1"],
@@ -34,8 +38,8 @@ const skillImages = [
   ["MongoDB","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.qQwwv7aYYcjY1q42pOzPFwHaEL%26pid%3DApi&f=1"],
   ["SQL","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.srRWCNh2uhYtVQ0RcZXfpwHaD7%26pid%3DApi&f=1"],
 
-  ["NodeJS","https://www.hostingadvice.com/wp-content/uploads/2018/09/node-js-logo.jpg"],
-  ["JS","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.NBqrkgXTj3qPB5cZBXPFNQHaD1%26pid%3DApi&f=1"],
+  ["NodeJS","https://res.cloudinary.com/practicaldev/image/fetch/s--Lvl1ZNKy--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/1ph7yc1i1vqqgwpxegw5.png"],
+  ["JS","https://schoolinka.com/wp-content/uploads/2019/12/javascript.jpg"],
   
   ["FireB","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Pcwt9CLXrUlZQAUHTH9_SwHaDt%26pid%3DApi&f=1"],
   ["Heroku","https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.zOmlX_YQko_-_6JV0Ai_XQHaDI%26pid%3DApi&f=1"],

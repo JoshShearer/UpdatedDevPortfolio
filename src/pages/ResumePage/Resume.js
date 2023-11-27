@@ -25,6 +25,26 @@ const Img = styled("img")({
   maxHeight: "100%",
 });
 
+function createBulletPoints(bullet) {
+  const urlRegex = /(\b[a-z0-9.-]+\.[a-z]{2,4}\b)/gi;
+  const parts = bullet.split(urlRegex);
+  const elements = [];
+
+  for (let i = 0; i < parts.length; i++) {
+    if (urlRegex.test(parts[i])) {
+      elements.push(
+        <a key={i} href={`https://${parts[i]}`} target="_blank" rel="noopener noreferrer" style={{ color: 'blue' }}>
+          {parts[i]}
+        </a>
+      );
+    } else {
+      elements.push(parts[i]);
+    }
+  }
+
+  return elements;
+}
+
 function Resume() {
   return (
     <>
@@ -55,114 +75,113 @@ function Resume() {
             display="flex"
           >
             {/* <Container> */}
-              <Grid item sx={{ mx: "auto" }} xs={12} lg={3}>
-                <Grid display="flex" flexDirection="row" justifyContent="center">
-                  <ButtonBase sx={{ width: 200, height: 200, }} >
-                    <Img src={profile} />
-                  </ButtonBase>
-                </Grid>
-                <br />
-                <br />
-                <MKTypography
-                  fontFamily="cambria"
-                  variant="h2"
-                  textAlign="center"
-                  
-                >
-                  Josh Shearer
-                </MKTypography>
-                <MKTypography
-                  fontFamily="cambria"
-                  variant="h4"
-                  fontWeight="light"
-                  textAlign="center"
-                >
-                  Founder
-                </MKTypography>
-                <MKTypography
-                  fontFamily="cambria"
-                  variant="h4"
-                  fontWeight="light"
-                  textAlign="center"
-                >
-                  Lead Full Stack Developer
-                </MKTypography>
-                <MKTypography fontFamily="cambria" textAlign="center">
-                  <LocationOnIcon />
-                  Austin, TX
-                </MKTypography>
-                <br />
-                <MKTypography
-                  fontFamily="cambria"
-                  variant="h4"
-                  fontWeight="light"
-                >
-                  360.461.3810
-                </MKTypography>
-                <MKTypography
-                  fontFamily="cambria"
-                  variant="h4"
-                  fontWeight="light"
-                >
-                  <a href="mailto:Josh.Shearer@Zenify.Dev">
-                    Josh.Shearer@Zenify.Dev
-                  </a>
-                </MKTypography>
-                <Tooltip
-                  id="github"
-                  title="Check out my Github"
-                  placement={window.innerWidth > 959 ? "top" : "left"}
-                >
-                  <IconButton
-                    href="https://github.com/JoshShearer"
-                    target="_blank"
-                    size="large"
-                    // color="secondary"
-                  >
-                    <GitHub />
-                  </IconButton>
-                </Tooltip>
-
-                <Tooltip
-                  id="linkedin"
-                  title="My LinkedIn"
-                  size="large"
-                  placement={window.innerWidth > 959 ? "top" : "left"}
-                >
-                  <IconButton
-                    href="https://www.linkedin.com/in/joshshearer/"
-                    target="_blank"
-                    // color="secondary"
-                  >
-                    <LinkedIn />
-                  </IconButton>
-                </Tooltip>
-                <Tooltip
-                  id="instagram-tooltip"
-                  title="Follow me on instagram"
-                  placement={window.innerWidth > 959 ? "top" : "left"}
-                >
-                  <IconButton
-                    href="https://www.instagram.com/j_shearer83"
-                    target="_blank"
-                    size="large"
-                    // color="secondary"
-                  >
-                    <Instagram />
-                  </IconButton>
-                </Tooltip>
-                <br />
-                <br />
-                <MKTypography fontFamily="cambria" variant="h4">
-                  About Me
-                </MKTypography>
-                <br />
-                <MKTypography fontFamily="cambria" variant="body1">
-                  I enjoy building applications that provide a great user
-                  experience and solve difficult problems without compromising
-                  reliability or security.
-                </MKTypography>
+            <Grid item sx={{ mx: "auto" }} xs={12} lg={3}>
+              <Grid display="flex" flexDirection="row" justifyContent="center">
+                <ButtonBase sx={{ width: 200, height: 200 }}>
+                  <Img src={profile} />
+                </ButtonBase>
               </Grid>
+              <br />
+              <br />
+              <MKTypography
+                fontFamily="cambria"
+                variant="h2"
+                textAlign="center"
+              >
+                Josh Shearer
+              </MKTypography>
+              <MKTypography
+                fontFamily="cambria"
+                variant="h4"
+                fontWeight="light"
+                textAlign="center"
+              >
+                Founder
+              </MKTypography>
+              <MKTypography
+                fontFamily="cambria"
+                variant="h4"
+                fontWeight="light"
+                textAlign="center"
+              >
+                Lead Full Stack Developer
+              </MKTypography>
+              <MKTypography fontFamily="cambria" textAlign="center">
+                <LocationOnIcon />
+                Austin, TX
+              </MKTypography>
+              <br />
+              <MKTypography
+                fontFamily="cambria"
+                variant="h4"
+                fontWeight="light"
+              >
+                360.461.3810
+              </MKTypography>
+              <MKTypography
+                fontFamily="cambria"
+                variant="h4"
+                fontWeight="light"
+              >
+                <a href="mailto:Josh.Shearer@Zenify.Dev">
+                  Josh.Shearer@Zenify.Dev
+                </a>
+              </MKTypography>
+              <Tooltip
+                id="github"
+                title="Check out my Github"
+                placement={window.innerWidth > 959 ? "top" : "left"}
+              >
+                <IconButton
+                  href="https://github.com/JoshShearer"
+                  target="_blank"
+                  size="large"
+                  // color="secondary"
+                >
+                  <GitHub />
+                </IconButton>
+              </Tooltip>
+
+              <Tooltip
+                id="linkedin"
+                title="My LinkedIn"
+                size="large"
+                placement={window.innerWidth > 959 ? "top" : "left"}
+              >
+                <IconButton
+                  href="https://www.linkedin.com/in/joshshearer/"
+                  target="_blank"
+                  // color="secondary"
+                >
+                  <LinkedIn />
+                </IconButton>
+              </Tooltip>
+              <Tooltip
+                id="instagram-tooltip"
+                title="Follow me on instagram"
+                placement={window.innerWidth > 959 ? "top" : "left"}
+              >
+                <IconButton
+                  href="https://www.instagram.com/j_shearer83"
+                  target="_blank"
+                  size="large"
+                  // color="secondary"
+                >
+                  <Instagram />
+                </IconButton>
+              </Tooltip>
+              <br />
+              <br />
+              <MKTypography fontFamily="cambria" variant="h4">
+                About Me
+              </MKTypography>
+              <br />
+              <MKTypography fontFamily="cambria" variant="body1">
+                I enjoy building applications that provide a great user
+                experience and solve difficult problems without compromising
+                reliability or security.
+              </MKTypography>
+            </Grid>
             {/* </Container> */}
             <Grid
               item
@@ -182,7 +201,7 @@ function Resume() {
               </MKTypography>
               <br />
               {ResumeDetails.Experience.jobs.map((job, key) => (
-                <div>
+                <div key={key}>
                   <MKTypography
                     fontFamily="cambria"
                     variant="h5"
@@ -209,15 +228,17 @@ function Resume() {
                   </MKTypography>
                   <br />
                   <ul>
-                    {job.Bullets.map((point) => (
-                      <MKTypography
-                        fontFamily="cambria"
-                        variant="body2"
-                        color="black"
-                        fontWeight="light"
-                      >
-                        <li>{point}</li>
-                      </MKTypography>
+                    {job.Bullets.map((point, index) => (
+                      <li key={index}>
+                        <MKTypography
+                          fontFamily="cambria"
+                          variant="body2"
+                          color="black"
+                          fontWeight="light"
+                        >
+                          {createBulletPoints(point)}
+                        </MKTypography>
+                      </li>
                     ))}
                   </ul>
                   <br />

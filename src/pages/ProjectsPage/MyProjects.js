@@ -1,5 +1,17 @@
 export const MyProjects = [
   {
+    id: 6,
+    title: "ShroomSpy",
+    skills: "Strategic Leadership, Tech Stack Development, Team Building & Management, Product Development, Research & Innovation, Stakeholder Engagement, Full-Stack Development, Cloud Computing, Machine Learning",
+    "toolset": "JavaScript, MongoDB, Machine Learning, Headless CMS, Firebase, Mongo Atlas",
+    notableLibraries: "React, Node.js, Express.js, MongoDB, Firebase, Various ML libraries",
+    projectOverview: "ShroomSpy: A pioneering platform uniting and educating the world on the diverse wonders of mushrooms. As the Founder and Head of Technology, I spearheaded the vision and development of ShroomSpy, overseeing its growth from a concept to a revolutionary online marketplace and informational hub. The platform features a comprehensive database on mushrooms, leveraging machine learning for data analysis and cloud computing for scalability.",
+    keyLessons: "This project has been an extensive journey in building a company from the ground up. As the sole developer for the initial phase, I gained invaluable experience in various aspects of technology and business development. After building a small team I gained insight into agile processes and leadership to keep building proficient and on schedule.  Key areas of learning included advanced full-stack development, cloud-based infrastructure, machine learning integration, and strategic business planning. Additionally, the project honed my skills in leadership, team management, and stakeholder engagement, ensuring alignment of technological development with market needs.",
+    demoLink: "https://shroomspy.com",
+    githubLink: "https://github.com/ShroomSpy",
+    imageLink: "https://www.hsph.harvard.edu/nutritionsource/wp-content/uploads/sites/30/2020/03/brown-mushroom-53494-1024x629.jpg"
+  },  
+  {
     id: 0,
     title: "LoopString",
     skills:
