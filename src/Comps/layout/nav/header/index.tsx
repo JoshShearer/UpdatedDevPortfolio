@@ -3,15 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { Comps_modal } from "#src/Comps/modal";
-// import {
-//   HeroiconsBars316Solid,
-//   HeroiconsMagnifyingGlassSolid,
-//   LucideMapPin,
-//   MaterialSymbolsShoppingCartOutline,
-//   XMarkIcon,
-// } from "@heroicons/react/24/outline";
-// import { ChevronDownIcon } from "@heroicons/react/20/solid";
-//import type { Location } from "#src/models/types";
 import EmojioneMonotoneMushroom from '~icons/emojione-monotone/mushroom';
 import LucideMapPin from '~icons/lucide/map-pin'
 import mushroomLogoDark from "#src/assets/magLogoPrimaryDark60.png";
@@ -41,7 +32,7 @@ export const Comps_layout_nav_header = (_props: typeof defaultProps) => {
   const [isDark, setIsDark] = useState(false);
 
   return (
-    <header className="z-50 bg-gradient-to-r from-purple-500 to-blue-500 font-bold text-light-primary dark:text-dark-primary shadow-custom">
+    <header className="h-20 bg-gradient-to-r from-purple-500 to-blue-500 font-bold text-light-primary dark:text-dark-primary shadow-custom ">
       <div className="container mx-auto flex justify-between items-center p-4">
         <a href="/" className="flex items-center space-x-3">
           <img

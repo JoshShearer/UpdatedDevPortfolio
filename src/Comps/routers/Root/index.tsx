@@ -11,7 +11,7 @@ export const Comps_routers_Root = () => {
       <div className="Comps_layout_nav_header fixed top-0 left-0 right-0 z-50">
         <Comps_layout_nav_header />
       </div>
-      <div className="React-Router-Outlet flex justify-center mt-20 md:mt-28 2xl-w-max=[75%]">
+      <div className="React-Router-Outlet flex justify-center overflow-y-auto bg-light-background dark:bg-dark-background md:mt-20 2xl-w-max=[75%]">
         {/* Show loader when navigating */}
         {navigation.state === "loading" ? (
           <Comps_misc_loading />

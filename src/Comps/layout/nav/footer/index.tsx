@@ -3,7 +3,6 @@ import React, { useEffect, JSX } from "react";
 import Trade from "#src/assets/LS_Logo.png";
 import EmojioneMonotoneMushroom from '~icons/emojione-monotone/mushroom';
 
-
 const defaultProps = {
   idKey: "default",
   orientation: "relative",
@@ -12,9 +11,7 @@ const defaultProps = {
   orientation?: string;
   children?: JSX.Element;
 };
-// const selector = createStructuredSelector({
-//    item: (root) => root.stores,
-// })
+
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
@@ -22,22 +19,11 @@ function classNames(...classes: string[]) {
 export const Comps_layout_nav_footer = (_props: typeof defaultProps) => {
   const props = { ...defaultProps, ..._props };
 
-  // useEffect(() => {
-
-  // },[]);
-
-  // const selected = useSelector((state) => selector(state, props));
-
-  // const selected = useSelector(
-  //   (rootState: RootState) => rootState.model.statevar //capturing state slice (not internal selector)
-  // );
-  // const selected = useSelector(store.select.model.selectorFunction); //using state and selector (internal selector function)
-
   return (
     <footer
       className={classNames(
         props.orientation,
-        "Comps_layout_nav_footer mx-auto w-full pb-16 pt-2 px-4 shadow-customB bg-gradient-to-r from-light-500 to-blue-500"
+        "Comps_layout_nav_footer w-full px-4 py-4 bg-gradient-to-r from-light-500 to-blue-500 shadow-customB"
       )}
     >
       <SmallPrint />
@@ -56,21 +42,43 @@ function SocialLink({ href, target, icon: Icon, children }) {
 
 function SmallPrint() {
   return (
-    <section className="ml-24 max-w-5xl bg-light-background dark:bg-dark-background">
+    <section className="mx-auto max-w-[1200px] bg-light-background dark:bg-dark-background px-4">
       <div className="flex flex-col justify-between items-center gap-5 border-light-primary pt-8 dark:border-dark-primary sm:flex-row">
-      <nav className="hidden md:flex space-x-6">
-          <a href="#home" className="font-bold text-light-primary dark:text-dark-primary hover:text-gray-200 transition-all">Home</a>
-          <a href="#about" className="font-bold text-light-primary dark:text-dark-primary hover:text-gray-200 transition-all">About</a>
-          <a href="#portfolio" className="font-bold text-light-primary dark:text-dark-primary hover:text-gray-200 transition-all">Portfolio</a>
-          <a href="#contact" className="font-bold text-light-primary dark:text-dark-primary hover:text-gray-200 transition-all">Contact</a>
+        {/* Navigation Links */}
+        <nav className="flex space-x-6">
+          <a
+            href="#home"
+            className="font-bold text-light-primary dark:text-dark-primary hover:text-gray-200 transition-all"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            className="font-bold text-light-primary dark:text-dark-primary hover:text-gray-200 transition-all"
+          >
+            About
+          </a>
+          <a
+            href="#portfolio"
+            className="font-bold text-light-primary dark:text-dark-primary hover:text-gray-200 transition-all"
+          >
+            Portfolio
+          </a>
+          <a
+            href="#contact"
+            className="font-bold text-light-primary dark:text-dark-primary hover:text-gray-200 transition-all"
+          >
+            Contact
+          </a>
         </nav>
-        {/* Logo */}
-        <p className="text-s justify-end text-light-primary dark:text-dark-primary ">
-          &copy; Josh Shearer {new Date().getFullYear()}. All
-          rights reserved.
+
+        {/* Logo and Rights */}
+        <p className="text-center text-sm text-light-primary dark:text-dark-primary">
+          &copy; Josh Shearer {new Date().getFullYear()}. All rights reserved.
         </p>
-        {/* </div> */}
-        <div className="flex gap-4 justify-end">
+
+        {/* Social Links */}
+        <div className="flex gap-4">
           <SocialLink
             href="https://www.linkedin.com/company/ShroomSpy"
             target="_blank"
