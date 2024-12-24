@@ -4,6 +4,7 @@ export { Comps_layout_button_CTAButton } from '#src/Comps/layout/button/CTAButto
 export { Comps_layout_button_buyProduct } from '#src/Comps/layout/button/buyProduct';
 export { Comps_layout_button_outlineButton } from '#src/Comps/layout/button/outlineButton';
 export { Comps_layout_button_subtleButton } from '#src/Comps/layout/button/subtleButton';
+export { Comps_layout_card } from '#src/Comps/layout/card';
 export { Comps_layout_nav } from '#src/Comps/layout/nav';
 export { Comps_layout_nav_banner } from '#src/Comps/layout/nav/banner';
 export { Comps_layout_nav_breadcrumbs } from '#src/Comps/layout/nav/breadcrumbs';
@@ -15,3 +16,5 @@ export { Comps_misc_loading } from '#src/Comps/misc/loading';
 export { Comps_modal } from '#src/Comps/modal';
 export { Comps_routers_Primary } from '#src/Comps/routers/Primary';
 export { Comps_routers_Root } from '#src/Comps/routers/Root';
+export { Comps_section } from '#src/Comps/section';
+export { Comps_section_faq } from '#src/Comps/section/faq';

@@ -1,31 +1,41 @@
-import { defineConfig } from 'vite';
-import path from 'path';
-import react from '@vitejs/plugin-react';
-import tailwindcss from 'tailwindcss';
-import autoprefixer from 'autoprefixer';
-import Icons from 'unplugin-icons/vite';
-import url from "url";
-const __filename = url.fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-// https://vitejs.dev/config/
+import { defineConfig } from "vite";
+import path from "path";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "tailwindcss";
+import autoprefixer from "autoprefixer";
+import Icons from "unplugin-icons/vite";
+
 export default defineConfig({
-  // optimizeDeps: {
-  //   include: ['redux-persist', '@rematch/persist'],
-  // },
-  // build: {
-  //   commonjsOptions: {
-  //     include: [/redux-persist/, /@rematch/, /node_modules/],
-  //   },
-  // },
-  plugins: [react(), Icons({ autoInstall: true, compiler: 'jsx', jsx: 'react'})],
+  plugins: [
+    react(),
+    Icons({
+      autoInstall: true, // Automatically install missing icons
+      compiler: "jsx",
+      jsx: "react",
+    }),
+  ],
   css: {
     postcss: {
-      plugins: [tailwindcss(), autoprefixer()],
+      plugins: [
+        tailwindcss(), // Utility-first CSS
+        autoprefixer(), // Add vendor prefixes for cross-browser compatibility
+      ],
     },
   },
   resolve: {
     alias: {
-      "#src": path.resolve(__dirname, "./src"),
+      "#src": path.resolve(__dirname, "./src"), // Simplify imports with alias
+    },
+  },
+  build: {
+    outDir: "dist", // Where the built files go
+    sourcemap: true, // Enable sourcemaps for debugging
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom"], // Split React and ReactDOM into a separate chunk
+        },
+      },
     },
   },
 });

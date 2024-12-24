@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import React, {JSX, Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 
 export type Modal = {
