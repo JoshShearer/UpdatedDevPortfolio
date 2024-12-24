@@ -1,4 +1,9 @@
 const plugin = require("tailwindcss/plugin");
+const daisyui = require("daisyui");
+const aspectRatio = require("@tailwindcss/aspect-ratio");
+const typography = require("@tailwindcss/typography");
+const forms = require("@tailwindcss/forms");
+// const lineClamp = require('@tailwindcss/line-clamp')
 // const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
@@ -416,7 +421,6 @@ module.exports = {
     daisyui,
     aspectRatio,
     typography,
-    containerQueries,
     forms,
     plugin(function ({ addVariant, e, postcss }) {
       addVariant('firefox', ({ container, separator }) => {

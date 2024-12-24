@@ -10,7 +10,7 @@ const root = createRoot(rootElement!);
 
 const AppContent = () => (
   <React.StrictMode>
-          <Pages_app />
+    <Pages_app />
   </React.StrictMode>
 );
 

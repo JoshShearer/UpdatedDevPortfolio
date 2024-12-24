@@ -12,7 +12,7 @@ import {
 } from "schema-dts";
 
 const defaultProps = {
-  title: "ShroomSpy",
+  title: "JoshShearer",
 } as {
   title: string;
   desc: string;
@@ -46,10 +46,10 @@ export const Comps_misc_SEO = (_props: typeof defaultProps) => {
         headline: props.title,
         description: props.desc,
         image: props.image,
-        url: "https://shroomspy.com" + props.url,
+        url: "https://JoshShearer.co" + props.url,
         author: {
           "@type": "Organization",
-          name: "ShroomSpy",
+          name: "JoshShearer",
         },
         datePublished: props.datePublished,
         dateModified: props.dateModified,
@@ -62,7 +62,7 @@ export const Comps_misc_SEO = (_props: typeof defaultProps) => {
         name: props.title,
         description: props.desc,
         image: props.image,
-        url: "https://shroomspy.com" + props.url,
+        url: "https://JoshShearer.co" + props.url,
         brand: props.brand,
         offers: {
           "@type": "Offer",
@@ -124,27 +124,27 @@ export const Comps_misc_SEO = (_props: typeof defaultProps) => {
 
   return (
     <Helmet script={[jsonLd]}>
-      <title>{props.title} | ShroomSpy</title>
+      <title>{props.title} | JoshShearer</title>
       <meta name="description" content={props.desc} />
-      <meta name="author" content="ShroomSpy" />
+      <meta name="author" content="JoshShearer" />
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content={props.type} />
       <meta property="og:title" content={props.title} />
       <meta property="og:description" content={props.desc} />
-      <meta property="og:url" content={"https://shroomspy.com" + props.url} />
-      <meta property="og:site_name" content="ShroomSpy" />
+      <meta property="og:url" content={"https://JoshShearer.co" + props.url} />
+      <meta property="og:site_name" content="JoshShearer" />
       <meta property="" content={props.image} />
       {props.image && <meta property="og:image" content={props.image} />}
-      <meta name="twitter:creator" content="@shroomspy" />
+      <meta name="twitter:creator" content="@JoshShearer" />
       <meta name="twitter:card" content={props.type} />
       <meta name="twitter:title" content={props.title} />
       <meta name="twitter:description" content={props.desc} />
       {props.keywords && <meta name="keywords" content={props.keywords} />}
-      <link rel="canonical" href={"https://shroomspy.com" + props.url} />
+      <link rel="canonical" href={"https://JoshShearer.co" + props.url} />
       {props.altLink && <link rel="alternate" href={props.altLink} />}
       <meta name="mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-title" content="ShroomSpy" />
-      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-title" content="JoshShearer" />
+      <meta name="mobile-web-app-capable" content="yes" />
       {/* @ts-ignore */}
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />

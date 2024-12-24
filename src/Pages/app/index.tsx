@@ -13,37 +13,8 @@ import {
 import firebase from "firebase/compat/app";
 
 export const Pages_app = () => {
-  const selected = useSelector(selector);
-  const { auth, userAuth } = Comps_hooks_useUserAuth();
   const [initialAuthCheckCompleted, setInitialAuthCheckCompleted] =
-    useState(false);
-
-  const applyUserTheme = Comps_hooks_useTheme();
-
-  
-  // Check Subscription status
-  const fbAuth = getAuth(FirebaseAppWS);
-  const [user, userLoading] = useAuthState(fbAuth);
-
-  useEffect(() => {
-    // dispatch.models_UI.setLoading(true);
-    applyUserTheme();
-    onAuthStateChanged(userAuth, (user: firebase.User) => {
-      if (user) {
-        user.getIdToken().then((token) => {
-          // dispatch.models_userAuth.setUser(user);
-          // dispatch.models_userAuth.setIsAuth(false);
-          setInitialAuthCheckCompleted(true);
-        });
-      } else {
-        console.log("user is null, credentials may not be valid");
-        // dispatch.models_userAuth.setUser(null);
-        // dispatch.models_userAuth.setIsAuth(false);
-        setInitialAuthCheckCompleted(true);
-      }
-    });
-    // dispatch.models_UI.setLoading(false);
-  }, [initialAuthCheckCompleted]);
+    useState(true);
 
   function renderContent() {
     if (!initialAuthCheckCompleted) {

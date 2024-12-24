@@ -1,10 +1,7 @@
-import React, { useEffect } from "react";
-// import useSelector from 'reselect';
-import { useNavigate } from "react-router-dom";
-// import { createStructuredSelector } from '#src/models/utils'
-// import { useSelector } from '#src/models/hooks';
+import React, { useEffect, JSX } from "react";
 
-// import { RootState, Actions, dispatch, store } from '#src/models/store'
+import { useNavigate } from "react-router-dom";
+
 
 const defaultProps = {
   idKey: "default",
